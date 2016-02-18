@@ -1,0 +1,23 @@
+/* General body reset and background configuration */
+
+html, body {
+	margin: 0;
+	padding: 0;
+    
+}
+
+p {
+    font-family: junction;
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Remove the square dotted line when a link was clicked */
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}

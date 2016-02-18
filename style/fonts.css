@@ -1,0 +1,108 @@
+@font-face {
+	font-family: raleway;
+	src: url('../fonts/ralewayFont/raleway_thin-webfont.woff');
+}
+
+@font-face {
+	font-family: raleway;
+	src: url('../fonts/ralewayFont/Raleway-Light.otf');
+    font-weight: lighter;
+}
+
+@font-face {
+	font-family: raleway-regular;
+	src: url('../fonts/ralewayFont/Raleway-Regular.otf');
+}
+
+@font-face {
+	font-family: amaranth;
+	src: url('../fonts/amaranthFont/Amaranth-Regular.otf');
+}
+
+@font-face {
+	font-family: amaranth;
+	src: url('../fonts/amaranthFont/Amaranth-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+	font-family: amaranth;
+	src: url('../fonts/amaranthFont/Amaranth-Italic.otf');
+    font-style: italic;
+}
+
+@font-face {
+	font-family: amaranth;
+	src: url('../fonts/amaranthFont/Amaranth-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: diavlo;
+	src: url('../fonts/diavloFont/Diavlo_BLACK_II_37.otf');
+}
+
+@font-face {
+	font-family: diavlo;
+	src: url('../fonts/diavloFont/Diavlo_BOLD_II_37.otf');
+    font-weight: bold;
+}
+
+@font-face {
+	font-family: diavlo-book;
+	src: url('../fonts/diavloFont/Diavlo_BOOK_II_37.otf');
+}
+
+@font-face {
+	font-family: diavlo;
+	src: url('../fonts/diavloFont/Diavlo_LIGHT_II_37.otf');
+    font-weight: lighter;
+}
+
+@font-face {
+	font-family: diavlo-medium;
+	src: url('../fonts/diavloFont/Diavlo_MEDIUM_II_37.otf');
+}
+
+@font-face {
+	font-family: junction;
+	src: url('../fonts/junctionFont/Junction-regular.otf');
+}
+
+@font-face {
+	font-family: junction;
+	src: url('../fonts/junctionFont/Junction-bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+	font-family: junction;
+	src: url('../fonts/junctionFont/Junction-light.otf');
+    font-weight: lighter;
+}
+
+::selection {
+	background-color: #d62b2d;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #d62b2d;
+    color: #fff;
+}
+
+::-o-selection {
+    background-color: #d62b2d;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #d62b2d;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background-color: #d62b2d;
+    color: #fff;
+}

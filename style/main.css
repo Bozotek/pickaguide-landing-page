@@ -1,0 +1,55 @@
+/* General body reset and background configuration */
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#mainBackground {
+    background-image: url(/GeekAdminTools-v0.1/src/images/mountain_2_optimized.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: beige;    
+}
+
+
+/* Remove the square dotted line when a link was clicked */
+
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+
+/* Related to the welcome message */
+
+
+#welcomebox {
+    position: fixed;
+    width: 40em;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.welcomerow {
+    background-color: #ddd;
+    opacity: 0.82;
+    width: 100%;
+    margin: 0.6em;
+    padding: 0.8em;
+}
+
+.welcometext {
+    color: #333;
+    font-family: junction;
+    text-align: center;
+    font-size: 3em;
+}
