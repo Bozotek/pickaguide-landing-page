@@ -2,6 +2,7 @@
 <html>
 
 	<head>
+
 		<title>About</title>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +10,12 @@
 		<link rel="icon" href="/src/images/ghiss.ico" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="/lib/parallax.js-1.3.1/parallax.min.js"></script>
+
 	</head>
 
 	<body id="aboutBackground">
 
+		<?php include_once("analyticstracking.php") ?>
 		<?php include '../menu.html'; ?>
 
         <div class="imageSeparator
