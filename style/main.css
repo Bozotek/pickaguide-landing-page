@@ -7,11 +7,11 @@ html, body {
 }
 
 #mainBackground {
-    background-image: url(/src/images/mountain_2_optimized.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-color: beige;    
+  background-image: url(/src/images/mountain_2_optimized.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: beige;
 }
 
 
@@ -19,11 +19,11 @@ html, body {
 
 
 :focus {
-    outline: none;
+  outline: none;
 }
 
 ::-moz-focus-inner {
-    border: 0;
+  border: 0;
 }
 
 
@@ -31,25 +31,25 @@ html, body {
 
 
 #welcomebox {
-    position: fixed;
-    width: 40em;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  position: fixed;
+  width: 40em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .welcomerow {
-    background-color: #ddd;
-    opacity: 0.82;
-    width: 100%;
-    margin: 0.6em;
-    padding: 0.8em;
+  background-color: #ddd;
+  opacity: 0.82;
+  width: 100%;
+  margin: 0.6em;
+  padding: 0.8em;
 }
 
 .welcometext {
-    color: #333;
-    font-family: junction;
-    text-align: center;
-    font-size: 3em;
+  color: #333;
+  font-family: junction;
+  text-align: center;
+  font-size: 3em;
 }

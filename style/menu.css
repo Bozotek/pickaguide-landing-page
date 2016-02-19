@@ -1,24 +1,24 @@
 #navbar {
-    height: 5em;
-    width: 100%;
+  height: 5em;
+  width: 100%;
 	background-color: #050505;
-    opacity: 0.75;
-    white-space: nowrap;
+  opacity: 0.75;
+  white-space: nowrap;
 }
 
 .navel {
-    font-family: amaranth;
-    height: inherit;
-    display: inline-flex;
-    padding: 0 10px 0 10px;
+  font-family: amaranth;
+  height: inherit;
+  display: inline-flex;
+  padding: 0 10px 0 10px;
 }
 
 a.navlink {
 	color: #f4f4f4;
-    font-size: 1.2em;
+  font-size: 1.2em;
 	text-decoration: none;
-    transition: color 200ms linear;
-    margin: auto;
+  transition: color 200ms linear;
+  margin: auto;
 }
 
 a.navlink:hover {
