@@ -104,23 +104,24 @@ a:hover {
 
 .imageSeparator {
   width: 100%;
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .parent__width {
   width: inherit;
+	height: auto;
 }
 
-.image__full {
-  height: 100%;
+.image__large {
+  height: 45em;
 }
 
 .image__half {
-  height: 750px;
+  height: 30em;
 }
 
 .image__small {
-  height: 400px;
+  height: 15em;
 }
 
 .parallaxSeparator {
@@ -183,3 +184,27 @@ a:hover {
   -webkit-filter: drop-shadow(5px 10px 5px #1a1a1a);
   filter: drop-shadow(5px 10px 5px #1a1a1a);
 }
+
+
+/* Responsive design mode */
+
+
+@media screen and (max-width: 600px) {
+	.overlay__left {
+		left: initial;
+		margin: auto;
+	}
+
+	.overlay__right {
+		left: initial;
+		margin: auto;
+	}
+
+	.content {
+	  width: 90%;
+	  padding: 2em;
+	  margin: 0 auto;
+	  font-size: 0.74em;
+	  line-height: 1.7em;
+	}
+} /* For vertical screen orientation */
