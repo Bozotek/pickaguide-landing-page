@@ -189,7 +189,7 @@ a:hover {
 /* Responsive design mode */
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	.overlay__left {
 		left: initial;
 		margin: auto;
@@ -207,4 +207,54 @@ a:hover {
 	  font-size: 0.74em;
 	  line-height: 1.7em;
 	}
+
+	.image__large {
+	  height: 30em;
+	}
+
+	.image__half {
+	  height: 20em;
+	}
+
+	.image__small {
+	  height: 10em;
+	}
 } /* For vertical screen orientation */
+
+@media screen and (max-width: 400px) {
+	.parallaxOverlay {
+	  width: 100%;
+		padding: 1em;
+		box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+	}
+
+	.overlayText > p {
+	  font-size: 4vw;
+	  margin: 0.2em;
+	}
+
+	.content {
+		box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+	  width: 100%;
+	  padding: 2em;
+	  margin: 0 auto;
+	  font-size: 5vw;
+	  line-height: 1.7em;
+	}
+
+	.image__large {
+	  height: 20em;
+	}
+
+	.image__half {
+	  height: 10em;
+	}
+
+	.image__small {
+	  height: 5em;
+	}
+} /* For small vertical screen orientation */
