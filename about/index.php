@@ -13,7 +13,7 @@
 	
 	<body id="aboutBackground">
         
-		<?php include '/menu.html'; ?>
+		<?php include '../menu.html'; ?>
         
         <div class="imageSeparator
                                 image__full">
