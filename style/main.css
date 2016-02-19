@@ -60,27 +60,20 @@ html, body {
 
 @media screen and (max-width: 500px) {
 	#mainBackground {
-	  background-image: url(/src/images/mountain_2_optimized.jpg);
-	  background-repeat: no-repeat;
-	  background-attachment: fixed;
-	  background-position: center top;
 	  background-size: auto 100%;
-		background-color: beige;
 	}
 
 	#welcomebox {
 		background-color: #ddd;
 	  width: 100%;
-		top: 50%;
 		left: 0;
 		opacity: 0.82;
-		-webkit-transform: translate(0, -50%);
-	  transform: translate(0, -50%);
+		-webkit-transform: translate(0, -20%);
+	  transform: translate(0, -20%);
 		padding: 0.6em 0 0.6em 0;
 	}
 
 	.welcomerow {
-		background-color: #ddd;
 		width: auto;
 		padding: 0;
 		margin: 0.2em;
