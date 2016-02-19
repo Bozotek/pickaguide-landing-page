@@ -6,28 +6,28 @@
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="about.css" />
-		<link rel="icon" href="/GeekAdminTools-v0.1/src/images/ghiss.ico" />
+		<link rel="icon" href="/src/images/ghiss.ico" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="/GeekAdminTools-v0.1/lib/parallax.js-1.3.1/parallax.min.js"></script>
+        <script src="/lib/parallax.js-1.3.1/parallax.min.js"></script>
 	</head>
 	
 	<body id="aboutBackground">
         
-		<?php include '../menu.html'; ?>
+		<?php include '/menu.html'; ?>
         
         <div class="imageSeparator
                                 image__full">
-            <img class="parent__width" src="/GeekAdminTools-v0.1/src/images/city_3_optimized.jpg" />
+            <img class="parent__width" src="/src/images/city_3_optimized.jpg" />
         </div>
                     
         
         <div class="element">
             <p class="elementTitle">About</p>
             <hr class="titleBreak">
-            <img src="/GeekAdminTools-v0.1/src/images/ghost.png" id="aboutIcon" />
+            <img src="/src/images/ghost.png" id="aboutIcon" />
         </div>
         
-        <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/GeekAdminTools-v0.1/src/images/ax-vintage_optimized.jpg">
+        <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/ax-vintage_optimized.jpg">
             
             <div class="parallaxOverlay
                                     text__left
@@ -54,12 +54,12 @@
                     You must be asking yourself why in the world you're here ...
                     <br/><br/>Well wonder no more !
                     <br/><br/>Normally, if you're here, that means you know my main Website 
-                    <a href="/GeekForLife/index.php">GeekForLife</a>. If not,
+                    <a href="/index.php">GeekForLife</a>. If not,
                     feel free to check it out, you can click the link in the menu or the nice blue word in the previous sentence.
                     Come on ! Don't be shy !
                     <br/><br/>This is a kind of tool website that can help you upload new versions/updates of my projects.
                     <br/>More information about the tools are available on the <a href="#">Tools</a> page,
-                    if you wish to contact me then click <a href="/GeekAdminTools-v0.1/contact/index.php">here</a>.
+                    if you wish to contact me then click <a href="/contact/index.php">here</a>.
                     <br/><br/>
                     Oh and also, yes I know that the images I used for the parallax effect are not related to this website but
                     <br/>I thought it looked clean ;D
@@ -68,7 +68,7 @@
             
         </div>
         
-        <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/GeekAdminTools-v0.1/src/images/city_3_optimized.jpg">
+        <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/city_3_optimized.jpg">
             
             <div class="parallaxOverlay
                                     text__left
@@ -92,7 +92,7 @@
             <hr class="titleBreak">
         </div>
         
-        <?php include '../footer.html' ?>
+        <?php include '/footer.html' ?>
         
 	</body>
 	
