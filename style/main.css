@@ -86,6 +86,10 @@ html, body {
 } /* For vertical screen orientation */
 
 @media screen and (max-height: 400px) {
+	#mainBackground {
+	  background-size: 100% auto;
+	}
+
 	#welcomebox {
 		background-color: #ddd;
 	  opacity: 0.82;
