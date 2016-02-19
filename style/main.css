@@ -85,7 +85,7 @@ html, body {
 	}
 } /* For vertical screen orientation */
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 500px) {
 	#mainBackground {
 	  background-size: auto 100%;
 	}
@@ -96,8 +96,8 @@ html, body {
 		position: absolute;;
 		width: auto;
 		top: 50%;
-		-webkit-transform: translate(-50%, 0);
-	  transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, -30%);
+	  transform: translate(-50%, -30%);
 		padding: 0.6em 5em 0.6em 5em;
 	}
 
