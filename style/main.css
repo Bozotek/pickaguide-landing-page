@@ -58,6 +58,7 @@ html, body {
 
 /* Responsive design mode */
 
+
 @media screen and (max-width: 500px) {
 	#mainBackground {
 	  background-size: auto 100%;
@@ -82,4 +83,25 @@ html, body {
 	.welcometext {
 	  font-size: 6vw;
 	}
-}
+} /* For vertical screen orientation */
+
+@media screen and (max-height: 500px) {
+	#welcomebox {
+		background-color: #ddd;
+	  opacity: 0.82;
+		width: auto;
+		-webkit-transform: translate(-50%, -20%);
+	  transform: translate(-50%, -20%);
+		padding: 0.6em 5em 0.6em 5em;
+	}
+
+	.welcomerow {
+		width: auto;
+		padding: 0;
+		margin: 0.2em;
+	}
+
+	.welcometext {
+	  font-size: 6vh;
+	}
+} /* For horizontal screen orientation */
