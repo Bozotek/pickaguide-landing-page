@@ -87,16 +87,16 @@ html, body {
 
 @media screen and (max-height: 400px) {
 	#mainBackground {
-	  background-size: 100% auto;
+	  background-size: auto 100%;
 	}
 
 	#welcomebox {
 		background-color: #ddd;
 	  opacity: 0.82;
-		position: relative;
 		width: auto;
-		-webkit-transform: translate(-50%, -50%);
-	  transform: translate(-50%, -50%);
+		top: 50%;
+		-webkit-transform: translate(-50%, 0);
+	  transform: translate(-50%, 0);
 		padding: 0.6em 5em 0.6em 5em;
 	}
 
