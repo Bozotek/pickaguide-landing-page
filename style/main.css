@@ -7,7 +7,7 @@ html, body {
 }
 
 #mainBackground {
-    background-image: url(src/images/mountain_2_optimized.jpg);
+    background-image: url(/src/images/mountain_2_optimized.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
