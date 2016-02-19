@@ -93,7 +93,7 @@ html, body {
 	#welcomebox {
 		background-color: #ddd;
 	  opacity: 0.82;
-		top: 0;
+		position: relative;
 		width: auto;
 		-webkit-transform: translate(-50%, -20%);
 	  transform: translate(-50%, -20%);
