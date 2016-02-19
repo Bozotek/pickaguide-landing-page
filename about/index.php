@@ -16,7 +16,7 @@
 		<?php include '../menu.html'; ?>
         
         <div class="imageSeparator
-                                image__full">
+                                image__half">
             <img class="parent__width" src="/src/images/city_3_optimized.jpg" />
         </div>
                     

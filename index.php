@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>My Geeklife</title>
+		<title>PickaGuide</title>
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/style/main.css" />
@@ -12,8 +12,8 @@
 	<body id="mainBackground">
 		<?php include 'menu.html'; ?>
         <div id="welcomebox">
-            <div class="welcomerow"><div class="welcometext">Welcome FriendTripper</div></div>
-            <div class="welcomerow"><div class="welcometext">to our Website</div></div>
+            <div class="welcomerow"><div class="welcometext">Welcome Traveler</div></div>
+            <div class="welcomerow"><div class="welcometext">on PickaGuide</div></div>
             <div class="welcomerow"><div class="welcometext">to meet locals</div></div>
         </div>
 	</body>
