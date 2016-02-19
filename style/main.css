@@ -12,7 +12,7 @@ html, body {
   background-attachment: fixed;
   background-position: center top;
   background-size: 100%;
-	background-color: beige;
+	background-color: #ddd;
 }
 
 
@@ -75,17 +75,17 @@ html, body {
 		left: 0;
 		-webkit-transform: none;
 	  transform: none;
-		padding: 1em;
+		padding: 0.6em 0 0.6em 0;
 	}
 
 	.welcomerow {
 		background-color: #ddd;
 		width: auto;
 	  padding: 0;
-		margin: 0;
+		margin: 0.2em;
 	}
 
 	.welcometext {
-	  font-size: 4vw;
+	  font-size: 6vw;
 	}
 }
