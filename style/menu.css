@@ -18,6 +18,16 @@
   transition: box-shadow 200ms linear;
 }
 
+.active {
+  -webkit-box-shadow:inset 0px -3px 0px #2980b9;
+  -moz-box-shadow:inset 0px -3px 0px #2980b9;
+  box-shadow:inset 0px -3px 0px #2980b9;
+}
+
+.activePage {
+  color: #2980b9 !important;
+}
+
 .navel:hover {
   -webkit-box-shadow:inset 0px -3px 0px #d62b2d;
   -moz-box-shadow:inset 0px -3px 0px #d62b2d;
@@ -33,5 +43,5 @@ a.navlink {
 }
 
 a.navlink:hover {
-	color: #d62b2d;
+	color: #d62b2d !important;
 }
