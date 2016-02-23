@@ -2,7 +2,7 @@ var submitGuideInfos = function() {
 	var query = $('#guide_form').serialize();
 	$.ajax({
 		type: "POST",
-		url: "../guides_infos_insert.php",
+		url: "../guide_infos_insert.php",
 		data: query,
 		dataType: "json",
 		cache: false,
