@@ -17,6 +17,10 @@
     $description = $_POST["description"];
     $collection = $db->guideinfos;
 
+    if ($title == null {
+          throw new ErrorException("Your title seems empty, please enter valid caracters");
+      }
+
     if ($price == null || preg_match('/^[0-9]+$/', $price) != 1) {
           throw new ErrorException("This price seems incorrect, please enter caracter only between 0 and 9");
       }
