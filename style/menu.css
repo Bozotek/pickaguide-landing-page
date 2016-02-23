@@ -1,5 +1,4 @@
 #navbar {
-  z-index: 1;
   height: 5em;
   width: 100%;
 	background-color: white;
@@ -25,16 +24,6 @@
   box-shadow:inset 0px -3px 0px #d62b2d;
 }
 
-.active {
-  -webkit-box-shadow:inset 0px -3px 0px #2980b9;
-  -moz-box-shadow:inset 0px -3px 0px #2980b9;
-  box-shadow:inset 0px -3px 0px #2980b9;
-}
-
-.activePage {
-  color: #2980b9 !important;
-}
-
 a.navlink {
 	color: #050505;
   font-size: 1.2em;
@@ -44,5 +33,5 @@ a.navlink {
 }
 
 a.navlink:hover {
-	color: #d62b2d !important;
+	color: #d62b2d;
 }
