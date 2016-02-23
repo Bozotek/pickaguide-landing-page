@@ -3,13 +3,14 @@
 html, body {
 	margin: 0;
 	padding: 0;
-    
+
 }
 
 p {
     font-family: junction;
-    font-size: 1.2em;
-    color: white;
+    font-size: 1.1em;
+    color: #222;
+		text-align: center;
 }
 
 /* Remove the square dotted line when a link was clicked */
@@ -20,4 +21,137 @@ p {
 
 ::-moz-focus-inner {
     border: 0;
+}
+
+.contentBox {
+	width: 80em;
+	max-width: 100%;
+	background-color: #eee;
+	margin: 7em auto;
+	padding: 3em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-shadow: 0 5px 25px 0 #222;
+}
+
+#mainBackground {
+  background-image: url(/src/images/background_contact.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: 100%;
+	background-color: #222;
+}
+
+#guide_form {
+	overflow: auto;
+}
+
+#guide_form_wrapper {
+	width: 40em;
+	max-width: 95%;
+	margin: 5em auto;
+	position: relative;
+}
+
+.green {
+	background-color: rgba(46,204,113,0.5);
+}
+
+.red {
+	background-color: rgba(231,76,60,0.5);
+}
+
+#message {
+	padding: 0.5em 2em;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 3em;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+}
+
+.input {
+	width: 85%;
+	border: 0;
+	border-radius: 7px 7px 7px 7px;
+	line-height: 1.5em;
+	font-size: 1.4em;
+	padding: 0 1em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: #222;
+	color: #ddd;
+	opacity: 0.9;
+	float: center;
+	display: block;
+	margin: 1em auto;
+}
+
+#price {
+	width: 33%;
+	float: left;
+	margin-left: 2.1em;
+	margin-top: -0.2em;
+}
+
+#hours {
+	width: 33%;
+	float: right;
+	margin-right: 2.1em;
+	margin-top: -0.2em;
+}
+
+.submit {
+	width: 15%;
+	background-color: #ddd;
+	color: #222;
+	border: 0;
+	border-radius: 7px 7px 7px 7px;
+	line-height: 1.5em;
+	font-size: 1.9em;
+	padding: 0;
+	opacity: 0.9;
+	float: center;
+}
+
+.submit:hover {
+	color: #d62b2d;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+	#mainBackground {
+	  background-size: 100% auto;
+	}
+
+	p {
+		font-family: raleway;
+		font-size: 6vw;
+		text-align: center;
+	}
+
+	#guide_form_wrapper {
+		margin: 2em auto;
+	}
+
+	.input {
+		line-height: 1.5em;
+		font-size: 6vw;
+	}
+
+	.submit {
+		line-height: 1.5em;
+		font-size: 6vw;
+	}
+
+	.contentBox {
+		margin: 3em auto;
+		padding: 1em;
+	}
 }
