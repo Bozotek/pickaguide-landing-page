@@ -11,6 +11,32 @@
   box-shadow: 0px 5px 20px #222;
 }
 
+
+/* Related to Administration */
+
+
+.admel {
+  font-family: amaranth;
+  display: inline-flex;
+  height: 5em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 0 20px 0 20px;
+}
+
+a.admlink {
+  margin: auto;
+  color: #050505;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 200ms linear;
+}
+
+
+/* Related to Navigation */
+
+
 .navel {
   font-family: amaranth;
   height: inherit;
