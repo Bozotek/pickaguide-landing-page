@@ -11,7 +11,10 @@
 			$db = $mongo->pickaguide;
 		}
 
-		$email = $_POST["email"];
+		$title = $_POST["title"];
+    $price = $_POST["price"];
+    $hours = $_POST["hours"];
+    $description = $_POST["description"];
     $collection = $db->guideinfos;
 
     if ($email == null || preg_match('/[^@]+@[^@]+\.[^@]+/', $email) != 1) {
@@ -25,7 +28,10 @@
     }
 
     $document = array(
-      "email" => $email,
+      "title" => $title,
+      "price" => $price,
+      "hours" => $hours,
+      "description" => $description,
       "source" => "guides"
     );
 
