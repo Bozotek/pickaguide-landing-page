@@ -2,19 +2,35 @@
 <html>
 
 	<head>
+
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="/style/menu.css">
 		<link rel="stylesheet" href="/style/fonts.css">
-    </head>
-	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  </head>
+
 	<body>
-        
-        <div id="navbar" align="center">
-            <div class="navel"><a class="navlink" href="/index.php">Home</a></div>
-            <div class="navel"><a class="navlink" href="/about/index.php">About </a></div>
-            <div class="navel"><a class="navlink" href="/contact/index.php">Contact</a></div>
-        </div>
-        
+		<script type="text/javascript">
+		    $(function() {
+		      var url = window.location.href;
+
+	        $("#navbar a").each(function() {
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+					    $(this).addClass("activePage");			
+              $(this).closest("div").addClass("active");
+            }
+	        });
+		    });
+		</script>
+
+    <div id="navbar" align="center">
+        <div class="navel" id="home"><a class="navlink" href="/index.php" onclick="showMenuActivePage('home');">Home</a></div>
+        <div class="navel" id="about"><a class="navlink" href="/about/index.php" onclick="showMenuActivePage('about');">About </a></div>
+        <div class="navel" id="contact"><a class="navlink" href="/contact/index.php" onclick="showMenuActivePage('contact');">Contact</a></div>
+    </div>
+
 	</body>
-	
+
 </html>
