@@ -3,13 +3,14 @@
 html, body {
 	margin: 0;
 	padding: 0;
-    
+
 }
 
 p {
     font-family: junction;
-    font-size: 1.2em;
-    color: white;
+    font-size: 1.1em;
+    color: #222;
+		text-align: center;
 }
 
 /* Remove the square dotted line when a link was clicked */
@@ -20,4 +21,25 @@ p {
 
 ::-moz-focus-inner {
     border: 0;
+}
+
+.contentBox {
+	width: 80em;
+	max-width: 100%;
+	background-color: #eee;
+	margin: 3em auto;
+	padding: 3em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-shadow: 0 5px 25px 0 #222;
+}
+
+#mainBackground {
+  background-image: url(/src/images/background_contact.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: 100%;
+	background-color: #222;
 }
