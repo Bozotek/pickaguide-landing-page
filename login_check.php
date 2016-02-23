@@ -18,6 +18,11 @@
     $pseudo = ltrim($pseudo);
     $password = ltrim($password);
 
+    $result = $collection->findone(["pseudo" => $pseudo, "password" => $password])
+    $response["status"] = false;
+    $response["message"] = $result;
+
+
     if ($pseudo == null) {
           throw new ErrorException("Your pseudo seems empty, please enter valid caracters");
     }
@@ -25,17 +30,10 @@
           throw new ErrorException("Your password seems empty, please enter valid caracters");
     }
 
-
-    $document = array(
-      "pseudo" => $title,
-      "password" => $tel,
-      "source" => "guides"
-    );
-
-    $collection->insert($document);
 	} catch (Exception $e) {
 		$response["status"] = false;
 		$response["message"] = $e->getMessage();
+
   }
  	echo json_encode($response);
 	exit();
