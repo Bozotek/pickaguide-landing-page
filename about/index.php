@@ -19,8 +19,9 @@
 		<?php include '../menu.html'; ?>
 
         <div class="imageSeparator
-                    image__half">
-            <img class="parent__width" src="/src/images/city_3_optimized.jpg" />
+                    image__large">
+            <img class="parent__width
+												fix__bottom" src="/src/images/paris_night.jpg" />
         </div>
 
 
@@ -30,11 +31,11 @@
             <img src="/src/images/ghost.png" id="aboutIcon" />
         </div>
 
-        <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/ax-vintage_optimized.jpg">
+        <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/notre_dame.jpg">
 
             <div class="parallaxOverlay
                         text__left
-                        overlay__center
+                        overlay__left
                         overlay__rounded">
                 <p class="overlayTitle">Welcome</p>
 
@@ -71,7 +72,7 @@
 
         </div>
 
-        <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/city_3_optimized.jpg">
+        <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/girl_river.jpg">
 
             <div class="parallaxOverlay
                         text__left
