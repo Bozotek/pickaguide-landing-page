@@ -14,7 +14,7 @@
 		$title = $_POST["title"];
     $tel = $_POST["tel"];
     $description = $_POST["description"];
-    // $img = "http://a406.idata.over-blog.com/0/20/32/54/clara-morgane-orgueil.jpg";
+    $img = "http://a406.idata.over-blog.com/0/20/32/54/clara-morgane-orgueil.jpg";
     $collection = $db->guideinfos;
 
     $title = ltrim($title);
@@ -23,21 +23,19 @@
 
     if ($title == null) {
           throw new ErrorException("Your title seems empty, please enter valid caracters");
-      }
+    }
     if ($description == null) {
           throw new ErrorException("Your description seems empty, please enter valid caracters");
-      }
+    }
 
     if ($tel == null || preg_match('/^[0-9]{10}$/', $tel) != 1) {
           throw new ErrorException("This phone number seems incorrect, please enter ten caracter only between 0 and 9");
-      }
-
-
+    }
 
     $document = array(
       "title" => $title,
       "tel" => $tel,
-      // "img" => $img,
+      "img" => $img,
       "description" => $description,
       "source" => "guides"
     );
