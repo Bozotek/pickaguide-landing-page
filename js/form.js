@@ -1,3 +1,15 @@
+var activateSuccess = function() {
+	var element = document.getElementById('message');
+	element.className = "green";
+	element.innerHTML = "Votre adresse mail a bien été prise en compte, merci.<br/>Vous serez contacté lorsque le service sera disponible.";
+};
+
+var activateFailure = function(message) {
+	var element = document.getElementById('message');
+	element.className = "red";
+	element.innerHTML = message;
+};
+
 var submitGuideInfos = function() {
 	var query = $('#guide_form').serialize();
 	$.ajax({
