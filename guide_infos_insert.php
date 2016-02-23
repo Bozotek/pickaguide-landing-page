@@ -12,14 +12,12 @@
 		}
 
 		$title = $_POST["title"];
-    $price = $_POST["price"];
-    $hours = $_POST["hours"];
+    $tel = $_POST["tel"];
     $description = $_POST["description"];
     $collection = $db->guideinfos;
 
     $title = ltrim($title);
-    $price = ltrim($price);
-    $hours = ltrim($hours);
+    $tel = ltrim($tel);
     $description = ltrim($description);
 
     if ($title == null) {
@@ -29,19 +27,15 @@
           throw new ErrorException("Your description seems empty, please enter valid caracters");
       }
 
-    if ($price == null || preg_match('/^[0-9]+$/', $price) != 1) {
-          throw new ErrorException("This price seems incorrect, please enter caracter only between 0 and 9");
+    if ($tel == null || preg_match('/^[0-9]{10}$/', $tel) != 1) {
+          throw new ErrorException("This phone number seems incorrect, please enter ten caracter only between 0 and 9");
       }
 
-    if ($hours == null || preg_match('/^[0-4]+$/', $hours) != 1) {
-          throw new ErrorException("This hours seems incorrect, please enter hours only between 0 and 4");
-      }
 
 
     $document = array(
       "title" => $title,
-      "price" => $price,
-      "hours" => $hours,
+      "tel" => $tel,
       "description" => $description,
       "source" => "guides"
     );

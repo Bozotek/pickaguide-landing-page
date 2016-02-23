@@ -102,20 +102,6 @@ p {
 	margin: 1em auto;
 }
 
-#price {
-	width: 33%;
-	float: left;
-	margin-left: 2.1em;
-	margin-top: -0.2em;
-}
-
-#hours {
-	width: 33%;
-	float: right;
-	margin-right: 2.1em;
-	margin-top: -0.2em;
-}
-
 .submit {
 	width: 15%;
 	background-color: #ddd;
