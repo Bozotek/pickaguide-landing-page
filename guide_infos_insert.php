@@ -26,7 +26,7 @@
 
     $document = array(
       "email" => $email,
-      "source" => "partners"
+      "source" => "guides"
     );
 
     $collection->insert($document);
