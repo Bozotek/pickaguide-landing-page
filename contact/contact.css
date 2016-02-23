@@ -43,3 +43,11 @@ p {
   background-size: 100%;
 	background-color: #222;
 }
+
+.green {
+	background-color: rgba(46,204,113,0.5);
+}
+
+.red {
+	background-color: rgba(231,76,60,0.5);
+}

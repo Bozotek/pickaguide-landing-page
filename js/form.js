@@ -1,7 +1,7 @@
 var activateSuccess = function() {
 	var element = document.getElementById('message');
 	element.className = "green";
-	element.innerHTML = "Votre adresse mail a bien été prise en compte, merci.<br/>Vous serez contacté lorsque le service sera disponible.";
+	element.innerHTML = "Votre adresse inscripton a bien été prise en compte, merci.<br/>Vous serez contacté lorsque votre profil sera comfirmé.";
 };
 
 var activateFailure = function(message) {
