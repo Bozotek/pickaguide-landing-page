@@ -15,10 +15,7 @@
 		$password = $_POST["password"];
     $collection = $db->logininfos;
 
-    $pseudo = ltrim($pseudo);
-    $password = ltrim($password);
-
-    $result = $collection->findone(["pseudo" => $pseudo, "password" => $password])
+    $result = $collection->findone(["pseudo" => $pseudo, "password" => $password]);
     $response["status"] = false;
     $response["message"] = $result;
 
