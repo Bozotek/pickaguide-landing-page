@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="login.css" />
 		<link rel="icon" href="/src/images/ghiss.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="/js/form.js"></script>
+		<script src="/js/login.js"></script>
 	</head>
 
 	<body id="mainBackground">
