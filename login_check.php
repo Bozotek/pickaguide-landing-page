@@ -18,6 +18,7 @@
     $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
     $response["status"] = false;
     $response["message"] = $result;
+    print_r($result);
 
 
     if ($pseudo == null) {
