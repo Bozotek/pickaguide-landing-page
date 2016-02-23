@@ -17,16 +17,6 @@
     $description = $_POST["description"];
     $collection = $db->guideinfos;
 
-    if ($email == null || preg_match('/[^@]+@[^@]+\.[^@]+/', $email) != 1) {
-      throw new ErrorException("This email address seems incorrect, please contact us at alexander.saenen@epitech.eu");
-    }
-
-    $results = $collection->findone(array('email' => $email));
-
-    if ($results != null) {
-      throw new ErrorException("This email address already exists");
-    }
-
     $document = array(
       "title" => $title,
       "price" => $price,
