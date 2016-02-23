@@ -4,7 +4,7 @@
 		$isInProd = getenv('PROD');
 
 		if ($isInProd == true) {
-    	$mongo = new MongoClient("mongodb://pickdeveloper:lucasanstoast6@ds039404.mongolab.com:39404/heroku_xcxrc7w2");
+    	$mongo = new MongoClient(getenv('MONGOLAB_URI'));
 		  $db = $mongo->heroku_xcxrc7w2;
 		} else {
 			$mongo = new MongoClient();
