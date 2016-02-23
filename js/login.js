@@ -2,6 +2,7 @@ var activateSuccess = function() {
 	var element = document.getElementById('message');
 	element.className = "green";
 	element.innerHTML = "Successfully logged in !";
+	document.location.href="/index.php"
 };
 
 var activateFailure = function(message) {
