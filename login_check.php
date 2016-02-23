@@ -15,7 +15,7 @@
 		$password = $_POST["password"];
     $collection = $db->logininfos;
 
-    $result = $collection->findone(["pseudo" => $pseudo, "password" => $password]);
+    $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
     $response["status"] = false;
     $response["message"] = $result;
 
