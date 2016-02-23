@@ -22,6 +22,8 @@
 			<input type="text" name="email" placeholder="Enter your email" class="input">
 			<input type="submit" name="submit" class="submit" value="Apply" onclick="return submitGuideInfos();" >
 		</form>
+		<div><p id="message"></p></div>
+
 	</body>
 
 </html>
