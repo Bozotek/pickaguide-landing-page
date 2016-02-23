@@ -115,6 +115,10 @@ p {
 	float: center;
 }
 
+textarea {
+    resize: none;
+}
+
 .submit:hover {
 	color: #d62b2d;
 	cursor: pointer;
