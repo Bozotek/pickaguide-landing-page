@@ -17,7 +17,7 @@
     $description = $_POST["description"];
     $collection = $db->guideinfos;
 
-    if ($title == null {
+    if ($title == null) {
           throw new ErrorException("Your title seems empty, please enter valid caracters");
       }
 
