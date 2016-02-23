@@ -20,6 +20,15 @@
 			</p>
 		</div>
 
+		<div id="login_form_wrapper" style="text-align:center;">
+			<div id="messageBox"><p id="message"></p></div>
+			<form id="login_form">
+				<input type="text" name="pseudo" placeholder="Pseudo" class="input">
+				<input type="text" name="password" placeholder="password" class="input">
+				<input type="submit" name="submit" class="submit" value="Apply" onclick="return submitLoginInfos();" >
+			</form>
+		</div>
+
 	</body>
 
 </html>
