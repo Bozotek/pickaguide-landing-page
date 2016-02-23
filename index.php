@@ -21,8 +21,8 @@
         <div class="welcomerow"><div class="welcometext">on PickaGuide</div></div>
         <div class="welcomerow"><div class="welcometext">to meet locals</div></div>
 				<div class="welcomebuttonrow">
-					<a href="#"><div class="welcomebutton buttontext">Devenir guide</div></a>
-					<a href="#"><div class="welcomebutton buttontext" style="margin-right: 0;float: right;">Visiter</div></a>
+					<a href="#"><div class="welcomebutton buttontext">Visiter</div></a>
+					<a href="#"><div class="welcomebutton buttontext" style="margin-right: 0;float: right;">Devenir guide</div></a>
 				</div>
     </div>
 
