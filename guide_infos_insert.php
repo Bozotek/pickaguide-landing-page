@@ -17,10 +17,15 @@
     $description = $_POST["description"];
     $collection = $db->guideinfos;
 
-    if ($title == null || $title == '') {
+    $title = ltrim($title);
+    $price = ltrim($price);
+    $hours = ltrim($hours);
+    $description = ltrim($description);
+
+    if ($title == null) {
           throw new ErrorException("Your title seems empty, please enter valid caracters");
       }
-    if ($description == null || $description == '') {
+    if ($description == null) {
           throw new ErrorException("Your description seems empty, please enter valid caracters");
       }
 
