@@ -63,6 +63,15 @@ p {
 	background-color: rgba(231,76,60,0.5);
 }
 
+#messageBox {
+       max-width: 95%;
+       position: absolute;
+       margin: auto;
+       left: 0;
+       right: 0;
+       top: -7em;
+}
+
 #message {
 	padding: 0.5em 2em;
 	position: absolute;
