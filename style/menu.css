@@ -44,5 +44,5 @@ a.navlink {
 }
 
 a.navlink:hover {
-	color: #d62b2d;
+	color: #d62b2d !important;
 }
