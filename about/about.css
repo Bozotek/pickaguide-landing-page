@@ -105,6 +105,7 @@ a:hover {
 .imageSeparator {
   width: 100%;
 	overflow: hidden;
+	position: relative;
 }
 
 .parent__width {
@@ -122,6 +123,17 @@ a:hover {
 
 .image__small {
   height: 15em;
+}
+
+.fix__center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.fix__bottom {
+	position: absolute;
+	bottom: 0;
 }
 
 .parallaxSeparator {
