@@ -1,5 +1,5 @@
 var submitGuideInfos = function() {
-	var query = $('#email_form').serialize();
+	var query = $('#guide_form').serialize();
 	$.ajax({
 		type: "POST",
 		url: "../guides_infos_insert.php",

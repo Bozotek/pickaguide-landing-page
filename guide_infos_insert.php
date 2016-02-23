@@ -5,7 +5,6 @@
 
 		if ($isInProd == true) {
     	$mongo = new MongoClient("mongodb://pickdeveloper:lucasanstoast6@ds039404.mongolab.com:39404/heroku_xcxrc7w2");
-      $collection = $db->tmpuser;
 		  $db = $mongo->heroku_xcxrc7w2;
 		} else {
 			$mongo = new MongoClient();
@@ -13,6 +12,7 @@
 		}
 
 		$email = $_POST["email"];
+    $collection = $db->guideinfos;
 
     if ($email == null || preg_match('/[^@]+@[^@]+\.[^@]+/', $email) != 1) {
       throw new ErrorException("This email address seems incorrect, please contact us at alexander.saenen@epitech.eu");
