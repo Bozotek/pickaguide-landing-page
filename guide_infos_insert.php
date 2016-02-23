@@ -14,7 +14,7 @@
 		$title = $_POST["title"];
     $tel = $_POST["tel"];
     $description = $_POST["description"];
-    $îmg = "http://a406.idata.over-blog.com/0/20/32/54/clara-morgane-orgueil.jpg"
+    // $img = "http://a406.idata.over-blog.com/0/20/32/54/clara-morgane-orgueil.jpg";
     $collection = $db->guideinfos;
 
     $title = ltrim($title);
@@ -37,7 +37,7 @@
     $document = array(
       "title" => $title,
       "tel" => $tel,
-      "img" => $img,
+      // "img" => $img,
       "description" => $description,
       "source" => "guides"
     );
