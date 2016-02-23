@@ -9,9 +9,12 @@
 		<link rel="icon" href="/GeekAdminTools-v0.1/src/images/ghiss.ico" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	</head>
-	
+
 	<body>
-        
+
+		<?php include_once("analyticstracking.php") ?>
+		<?php include '../menu.html'; ?>
+		
 	</body>
-	
+
 </html>

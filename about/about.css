@@ -247,6 +247,14 @@ a:hover {
 	  margin: 0.2em;
 	}
 
+	.overlayTitle {
+		font-size: 6vw;
+	}
+
+	.elementTitle {
+		font-size: 7vw;
+	}
+
 	.content {
 		box-sizing: border-box;
   	-moz-box-sizing: border-box;
@@ -254,7 +262,7 @@ a:hover {
 	  width: 100%;
 	  padding: 2em;
 	  margin: 0 auto;
-	  font-size: 5vw;
+	  font-size: 4vw;
 	  line-height: 1.7em;
 	}
 
@@ -268,5 +276,9 @@ a:hover {
 
 	.image__small {
 	  height: 5em;
+	}
+
+	p {
+		font-size: 4vw;
 	}
 } /* For small vertical screen orientation */
