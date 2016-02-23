@@ -20,8 +20,8 @@
 			</p>
 		</div>
 
+		<div><p id="message"></p></div>
 		<div id="guide_form_wrapper" style="text-align:center;">
-			<div><p id="message"></p></div>
 			<form id="guide_form">
 				<input type="text" name="title" placeholder="Enter a title announcement" class="input">
 				<input type="text" name="price" placeholder="Enter a price" class="input" id="price">
