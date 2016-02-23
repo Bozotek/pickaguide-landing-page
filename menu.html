@@ -14,13 +14,18 @@
 		<script type="text/javascript">
 		    $(function() {
 		      var url = window.location.href;
-
-	        $("#navbar a").each(function() {
-            if (url == (this.href)) {
-					    $(this).addClass("activePage");
-              $(this).closest("div").addClass("active");
-            }
-	        });
+					if (url.endsWith("/")) {
+						var el = $("#navbar a").first();
+						el.addClass("activePage");
+						el.closest("div").addClass("active");
+					} else {
+		        $("#navbar a").each(function() {
+	            if (url == (this.href)) {
+						    $(this).addClass("activePage");
+	              $(this).closest("div").addClass("active");
+	            }
+		        });
+					}
 		    });
 		</script>
 
