@@ -35,8 +35,7 @@
 
     $document = array(
       "title" => $title,
-      "price" => $price,
-      "hours" => $hours,
+      "tel" => $tel,
       "description" => $description,
       "source" => "guides"
     );
