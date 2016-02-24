@@ -16,7 +16,7 @@
     $collection = $db->logininfos;
 
     $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
-    $response["status"] = true;
+    $response["status"] = false;
     $response["message"] = $result;
 
     // if ($result != null) {
