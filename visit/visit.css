@@ -1,4 +1,7 @@
+
+
 /* General body reset and background configuration */
+
 
 html, body {
 	margin: 0;
@@ -13,7 +16,18 @@ p {
 		text-align: center;
 }
 
+#mainBackground {
+  background-image: url(/src/images/optimized_toulouse.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: 100%;
+	background-color: #222;
+}
+
+
 /* Remove the square dotted line when a link was clicked */
+
 
 :focus {
     outline: none;
@@ -23,8 +37,12 @@ p {
     border: 0;
 }
 
+
+/* Related to the Content */
+
+
 .contentBox {
-	width: 80em;
+	width: 81em;
 	max-width: 100%;
 	background-color: #eee;
 	margin: 7em auto;
@@ -35,122 +53,94 @@ p {
 	box-shadow: 0 5px 25px 0 #222;
 }
 
-#mainBackground {
-  background-image: url(/src/images/background_contact.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  background-size: 100%;
-	background-color: #222;
-}
 
-#guide_form {
-	overflow: auto;
-}
+/* Related to the guide results */
 
-#guide_form_wrapper {
-	width: 40em;
-	max-width: 95%;
-	margin: 5em auto;
-	position: relative;
-}
 
-.green {
-	background-color: rgba(46,204,113,0.5);
-}
-
-.red {
-	background-color: rgba(231,76,60,0.5);
-}
-
-#messageBox {
-       max-width: 95%;
-       position: absolute;
-       margin: auto;
-       left: 0;
-       right: 0;
-       top: -7em;
-}
-
-#message {
-	padding: 0.5em 2em;
-	position: absolute;
+.results {
 	margin: auto;
-	left: 0;
-	right: 0;
-	top: 3em;
-	font-weight: bold;
-	font-style: italic;
-	color: white;
+	width: 81em;
+	max-width: 100%;
 }
 
-.input {
-	width: 85%;
-	border: 0;
-	border-radius: 7px 7px 7px 7px;
-	line-height: 1.5em;
-	font-size: 1.4em;
-	padding: 0 1em;
+.result {
+	background-color: #ddd;
+	width: 20em;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: auto;
+	margin: 1.9em;
+	box-shadow: 0 5px 25px 0 black;
+}
+
+.profile_header {
+	height: 10em;
+	font-style: italic;
+	background-color: #222;
+	box-shadow: 0 3px 15px 0 #222;
+}
+
+.profile_body {
+	font-family: raleway;
+	margin: 2em;
+	max-height: 10em;
+	text-align: left;
+	overflow-y: hidden;
+	text-overflow: ellipsis;
+}
+
+.profile_header_block {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	background-color: #222;
+	display: inline-block;
+	padding: 2em;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.image {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0 0 25px 0 black;
+}
+
+.infos_wrapper {
+	height: 50%;
+}
+
+.infos {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+	vertical-align: middle;
+	text-align: left;
+	font-family: raleway;
+	font-weight: bold;
 	color: #ddd;
-	opacity: 0.9;
-	float: center;
-	display: block;
-	margin: 1em auto;
+	margin: 0;
+	text-shadow: 0 5px 15px black;
 }
 
-.submit {
-	width: 15%;
-	background-color: #ddd;
-	color: #222;
-	border: 0;
-	border-radius: 7px 7px 7px 7px;
-	line-height: 1.5em;
-	font-size: 1.9em;
-	padding: 0;
-	opacity: 0.9;
-	float: center;
-}
 
-textarea {
-    resize: none;
-}
+/* Responsive design mode */
 
-.submit:hover {
-	color: #d62b2d;
-	cursor: pointer;
-}
 
 @media screen and (max-width: 500px) {
 	#mainBackground {
-	  background-size: 100% auto;
-	}
-
-	p {
-		font-family: raleway;
-		font-size: 6vw;
-		text-align: center;
-	}
-
-	#guide_form_wrapper {
-		margin: 2em auto;
-	}
-
-	.input {
-		line-height: 1.5em;
-		font-size: 6vw;
-	}
-
-	.submit {
-		line-height: 1.5em;
-		font-size: 6vw;
+	  background-size: auto 100%;
 	}
 
 	.contentBox {
-		margin: 3em auto;
 		padding: 1em;
+	}
+
+	.result {
+		margin: 1em 0;
 	}
 }

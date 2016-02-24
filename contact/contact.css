@@ -124,6 +124,10 @@ textarea {
 	cursor: pointer;
 }
 
+
+/* Responsive design mode */
+
+
 @media screen and (max-width: 500px) {
 	#mainBackground {
 	  background-size: 100% auto;
