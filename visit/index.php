@@ -8,10 +8,11 @@
 		<link rel="stylesheet" href="visit.css" />
 		<link rel="icon" href="/src/images/ghiss.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="/js/form.js"></script>
+		<script src="/js/main.js"></script>
 	</head>
 
 	<body id="mainBackground">
+
 		<?php include '../menu.html'; ?>
 
 		<div class="contentBox">
@@ -39,12 +40,16 @@
 					echo "<div class='result'>";
 					echo "<div class='profile_header'>";
 					echo "<div class='profile_header_block'>";
-					echo "<img class='image' src='" . $guide["img"] . "' />";
+					echo "<div class='image_wrapper'><img class='image' src='" . $guide["img"] . "' /></div>";
 					echo "</div>";
 					echo "<div class='profile_header_block'>";
 					echo "<div class='infos_wrapper'><p class='infos'>Jackie</p></div>";
 					echo "<div class='infos_wrapper'><p class='infos'>21 ans</p></div>";
 					echo "</div>";
+					echo "</div>";
+					echo "<div class='title'>";
+					echo "<div class='title_button'>Inviter</div>";
+					echo "<a href='/index.php' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
 					echo "</div>";
 					echo "<div class='profile_body'>";
 					echo nl2br($guide["description"]);

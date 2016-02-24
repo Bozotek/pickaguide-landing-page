@@ -65,7 +65,7 @@ p {
 
 .result {
 	background-color: #ddd;
-	width: 20em;
+	width: 18em;
 	max-width: 100%;
 	display: inline-block;
 	vertical-align: top;
@@ -75,15 +75,46 @@ p {
 }
 
 .profile_header {
-	height: 10em;
+	height: 6.4em;
 	font-style: italic;
 	background-color: #222;
+}
+
+.title {
+	border-top: 1px dotted #555;
+	font-family: raleway;
+	color: white;
+	padding: 0.8em;
+	background-color: #222;
 	box-shadow: 0 3px 15px 0 #222;
+	overflow-x: hidden;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out
+}
+
+.title_button {
+	background-color: rgba(234,234,234,0.7);
+	border-radius: 2px;
+	position: absolute;
+	float: left;
+	width: 0;
+	color: black;
+	height: inherit;
+	text-align: center;
+	overflow: hidden;
+}
+
+.title_text {
+	text-decoration: none;
+	font-family: raleway;
+	color: white;
 }
 
 .profile_body {
 	font-family: raleway;
-	margin: 2em;
+	margin: 1.5em;
 	max-height: 10em;
 	text-align: left;
 	overflow-y: hidden;
@@ -95,18 +126,22 @@ p {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	display: inline-block;
-	padding: 2em;
+	padding: 0.7em 2em;
 	width: 50%;
 	height: 100%;
 	float: left;
 }
 
-.image {
-	border-radius: 50%;
+.image_wrapper {
 	height: 100%;
 	width: 100%;
+	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: 0 0 25px 0 black;
+}
+
+.image {
+	width: 100%;
 }
 
 .infos_wrapper {
