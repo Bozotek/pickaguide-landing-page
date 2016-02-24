@@ -15,10 +15,16 @@
 		$password = $_POST["password"];
     $collection = $db->logininfos;
 
-    $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
     $response["status"] = false;
-    $response["message"] = $result;
+    $response["message"] = "Wrong pseudo or password";
 
+    $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
+
+    if ($result->count() != 0) {
+        $response["status"] = true;
+        echo json_encode($response);
+      	exit();
+    }
     // if ($result != null) {
     //   $response["status"] = true;
     //   echo json_encode($response);
