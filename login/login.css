@@ -44,11 +44,11 @@ p {
 	background-color: #222;
 }
 
-#guide_form {
+#login_form {
 	overflow: auto;
 }
 
-#guide_form_wrapper {
+#login_form_wrapper {
 	width: 40em;
 	max-width: 95%;
 	margin: 5em auto;
@@ -64,12 +64,12 @@ p {
 }
 
 #messageBox {
-       max-width: 95%;
-       position: absolute;
-       margin: auto;
-       left: 0;
-       right: 0;
-       top: -7em;
+	max-width: 95%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -7em;
 }
 
 #message {
@@ -115,10 +115,6 @@ p {
 	float: center;
 }
 
-textarea {
-    resize: none;
-}
-
 .submit:hover {
 	color: #d62b2d;
 	cursor: pointer;
@@ -135,7 +131,7 @@ textarea {
 		text-align: center;
 	}
 
-	#guide_form_wrapper {
+	#login_form_wrapper {
 		margin: 2em auto;
 	}
 
