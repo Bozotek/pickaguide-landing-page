@@ -20,22 +20,19 @@
 
     $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
 
+    echo $result->count();
+
     if ($result->count() != 0) {
-        $response["status"] = true;
-        echo json_encode($response);
-      	exit();
+      $response["status"] = true;
+      echo json_encode($response);
+      exit();
     }
-    // if ($result != null) {
-    //   $response["status"] = true;
-    //   echo json_encode($response);
-    // 	exit();
-    // }
 
     if ($pseudo == null) {
-          throw new ErrorException("Your pseudo seems empty, please enter valid caracters");
+      throw new ErrorException("Your pseudo seems empty, please enter valid caracters");
     }
     if ($password == null) {
-          throw new ErrorException("Your password seems empty, please enter valid caracters");
+      throw new ErrorException("Your password seems empty, please enter valid caracters");
     }
 
 	} catch (Exception $e) {
