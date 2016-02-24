@@ -16,12 +16,14 @@
     $collection = $db->logininfos;
 
     $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
+    $response["status"] = true;
+    $response["message"] = $result;
 
-    if ($result != null) {
-      $response["status"] = true;
-      echo json_encode($response);
-    	exit();
-    }
+    // if ($result != null) {
+    //   $response["status"] = true;
+    //   echo json_encode($response);
+    // 	exit();
+    // }
 
     if ($pseudo == null) {
           throw new ErrorException("Your pseudo seems empty, please enter valid caracters");
