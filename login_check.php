@@ -20,9 +20,9 @@
 
     $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
 
-    echo $result->count();
+    // echo $result->count();
 
-    if ($result->count() != 0) {
+    if (count($result) != 0) {
       $response["status"] = true;
       echo json_encode($response);
       exit();
