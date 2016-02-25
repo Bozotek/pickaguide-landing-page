@@ -25,12 +25,22 @@
   padding: 0 20px 0 20px;
 }
 
+.admel:hover {
+  -webkit-box-shadow:inset 0px -3px 0px #d62b2d;
+  -moz-box-shadow:inset 0px -3px 0px #d62b2d;
+  box-shadow:inset 0px -3px 0px #d62b2d;
+}
+
 a.admlink {
   margin: auto;
   color: #050505;
   font-size: 1.2em;
   text-decoration: none;
   transition: color 200ms linear;
+}
+
+a.admlink:hover {
+	color: #d62b2d !important;
 }
 
 

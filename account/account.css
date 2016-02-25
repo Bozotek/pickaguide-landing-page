@@ -1,4 +1,7 @@
+
+
 /* General body reset and background configuration */
+
 
 html, body {
 	margin: 0;
@@ -13,7 +16,9 @@ p {
 		text-align: center;
 }
 
+
 /* Remove the square dotted line when a link was clicked */
+
 
 :focus {
     outline: none;
@@ -95,9 +100,8 @@ p {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	background-color: #222;
+	background-color: rgba(34,34,34,0.6);
 	color: #ddd;
-	opacity: 0.9;
 	float: center;
 	display: block;
 	margin: 1em auto;
@@ -105,14 +109,13 @@ p {
 
 .submit {
 	width: 15%;
-	background-color: #ddd;
+	background-color: rgba(255,255,255,0.6);
 	color: #222;
 	border: 0;
 	border-radius: 7px 7px 7px 7px;
-	line-height: 1.5em;
-	font-size: 1.9em;
+	line-height: 1.8em;
+	font-size: 1.5em;
 	padding: 0;
-	opacity: 0.9;
 	float: center;
 }
 
