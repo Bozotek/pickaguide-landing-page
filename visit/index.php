@@ -17,7 +17,7 @@
 
 		<div class="contentBox">
 			<p>
-				Welcome on the Visit Page !
+				Choisis un Toulousain !
 			</p>
 		</div>
 
