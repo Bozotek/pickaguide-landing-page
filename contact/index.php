@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 
@@ -12,7 +13,7 @@
 	</head>
 
 	<body id="mainBackground">
-		<?php include '../menu.html'; ?>
+		<?php include '../menu.php'; ?>
 
 		<div class="contentBox">
 			<p>

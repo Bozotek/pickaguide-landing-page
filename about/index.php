@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 
@@ -16,7 +17,7 @@
 	<body id="aboutBackground">
 
 		<?php include_once("analyticstracking.php") ?>
-		<?php include '../menu.html'; ?>
+		<?php include '../menu.php'; ?>
 
     <div class="imageSeparator
                 image__large">

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 
@@ -14,9 +15,9 @@
 	<body id="mainBackground">
 
 		<?php
-			if (!isset($_COOKIE["pguser"])) {
+			if (!isset($_SESSION["userId"])) {
 				echo '<script type="text/javascript">
-           window.location = "/account/index.php"
+           window.location.href = "/account/index.php"
       	</script>';
 			}
 		?>

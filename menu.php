@@ -35,7 +35,7 @@
       <div class="navel"><a class="navlink" href="/about/index.php">A propos</a></div>
       <div class="navel"><a class="navlink" href="/contact/index.php">Nous contacter</a></div>
 			<?php
-				if (!isset($_COOKIE["pguser"])) {
+				if (!isset($_SESSION["userId"])) {
 					echo "<div class='admel'><a class='admlink' href='/account/index.php'>Compte</a></div>";
 				} else {
 					echo "<div class='admel'><a class='admlink' onclick='logout();' href='#'>Déconnexion</a></div>";

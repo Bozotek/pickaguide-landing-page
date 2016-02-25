@@ -66,6 +66,12 @@ var submitSigninInfos = function() {
 };
 
 var logout = function() {
-  document.cookie = 'pguser' + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-	document.location.href = '/account/index.php';
+	$.ajax({
+		type: "POST",
+		url: "../logout.php",
+		cache: false,
+		success: function(data) {
+			window.location.href = '/account/index.php';
+		}
+	});
 }

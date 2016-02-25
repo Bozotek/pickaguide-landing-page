@@ -1,16 +1,17 @@
-var activateSuccess = function() {
+function activateSuccessGuide() {
 	var element = document.getElementById('message');
 	element.className = "green";
 	element.innerHTML = "Votre inscripton a bien été prise en compte.<br/>Vous serez contacté lorsque votre profil sera confirmé.";
 };
 
-var activateFailure = function(message) {
+function activateFailureGuide(message) {
 	var element = document.getElementById('message');
 	element.className = "red";
 	element.innerHTML = message;
 };
 
 var submitGuideInfos = function() {
+	deactivateMessage('message');
 	var query = $('#guide_form').serialize();
 	$.ajax({
 		type: "POST",
@@ -21,10 +22,10 @@ var submitGuideInfos = function() {
 		success: function(data) {
 			switch(data.status) {
 				case true:
-					activateSuccess();
+					activateSuccessGuide();
 					break;
 				default:
-					activateFailure(data.message);
+					activateFailureGuide(data.message);
 					break;
 			}
 		}

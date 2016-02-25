@@ -33,8 +33,8 @@ function getCookie(cname) {
     return "";
 }
 
-var visitaguide = function(id) {
-  if (getCookie("pguser") != "") {
+var visitaguide = function(hasSession) {
+  if (hasSession) {
 
   }
   else {

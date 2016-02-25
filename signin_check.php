@@ -57,9 +57,8 @@
 
     $result = $collection->findone(array("email" => $email));
 
-    $cookie_name = "pguser";
-    $cookie_value = $result["_id"];
-    setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+    session_start();
+    $_SESSION['userId'] = $result["_id"];
 	} catch (Exception $e) {
 		$response["status"] = false;
 		$response["message"] = $e->getMessage();

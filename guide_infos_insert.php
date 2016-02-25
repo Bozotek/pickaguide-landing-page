@@ -12,30 +12,31 @@
 		}
 
 		$title = $_POST["title"];
-    $tel = $_POST["tel"];
+    $city = $_POST["city"];
     $description = $_POST["description"];
-    $img = "http://a406.idata.over-blog.com/0/20/32/54/clara-morgane-orgueil.jpg";
     $collection = $db->guideinfos;
 
     $title = ltrim($title);
-    $tel = ltrim($tel);
+    $city = ltrim($city);
     $description = ltrim($description);
 
     if ($title == null) {
-      throw new ErrorException("Your title seems empty, please enter valid caracters");
-    }
-    if ($description == null) {
-      throw new ErrorException("Your description seems empty, please enter valid caracters");
+      throw new Exception("Le titre semble vide");
     }
 
-    if ($tel == null || preg_match('/^[0-9]{10}$/', $tel) != 1) {
-      throw new ErrorException("This phone number seems incorrect, please enter ten caracter only between 0 and 9");
-    } /*vérifier que le num n'existe pas déjà */
+    if ($city == null) {
+      throw new Exception("Vous n'avez pas indiqué de ville");
+    }
+
+    if ($description == null) {
+      throw new Exception("La description semble vide");
+    }
 
     $document = array(
       "title" => $title,
-      "tel" => $tel,
-      "img" => $img,
+      "city" => $city,
+      "img" => "",
+      "infos" => $_SESSION["userId"],
       "description" => $description,
       "source" => "guides"
     );

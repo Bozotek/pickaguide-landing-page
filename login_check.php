@@ -22,9 +22,8 @@
 
     if (count($result) != 0) {
       $response["status"] = true;
-      $cookie_name = "pguser";
-      $cookie_value = $result["_id"];
-      setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+      session_start();
+      $_SESSION['userId'] = $result["_id"];
       echo json_encode($response);
       exit();
     }
