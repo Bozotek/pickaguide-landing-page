@@ -91,10 +91,11 @@ p {
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out
+	transition: all 0.5s ease-out;
+	overflow-y: auto;
 }
 
-.title_button {
+.title_button_wrapper {
 	background-color: rgba(234,234,234,0.7);
 	border-radius: 2px;
 	position: absolute;
@@ -106,10 +107,20 @@ p {
 	overflow: hidden;
 }
 
+.title_button {
+	margin: auto;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+	vertical-align: middle;
+}
+
 .title_text {
 	text-decoration: none;
 	font-family: raleway;
 	color: white;
+	margin: 0.2em auto;
 }
 
 .profile_body {

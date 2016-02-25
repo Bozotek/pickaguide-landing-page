@@ -48,7 +48,7 @@
 					echo "</div>";
 					echo "</div>";
 					echo "<div class='title'>";
-					echo "<div class='title_button'>Inviter</div>";
+					echo "<div class='title_button_wrapper'><p class='title_button'>Inviter</p></div>";
 					echo "<a href='/index.php' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
 					echo "</div>";
 					echo "<div class='profile_body'>";
