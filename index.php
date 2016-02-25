@@ -17,9 +17,9 @@
 		<?php include 'menu.html'; ?>
 
     <div id="welcomebox">
-        <div class="welcomerow"><div class="welcometext">Welcome Traveler</div></div>
-        <div class="welcomerow"><div class="welcometext">on PickaGuide</div></div>
-        <div class="welcomerow"><div class="welcometext">to meet locals</div></div>
+        <div class="welcomerow"><div class="welcometext">Welcome Travelers</div></div>
+        <div class="welcomerow"><div class="welcometext">to PickaGuide</div></div>
+        <div class="welcomerow"><div class="welcometext">and meet locals</div></div>
 				<div class="welcomebuttonrow">
 					<a href="/visit/index.php"><div class="welcomebutton buttontext">Visiter</div></a>
 					<a href="/forms/guide.php"><div class="welcomebutton buttontext" style="margin-right: 0;float: right;">Devenir guide</div></a>
