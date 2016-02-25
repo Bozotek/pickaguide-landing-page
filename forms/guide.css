@@ -94,9 +94,8 @@ p {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	background-color: #222;
+	background-color: rgba(34,34,34,0.7);
 	color: #ddd;
-	opacity: 0.9;
 	float: center;
 	display: block;
 	margin: 1em auto;
@@ -104,19 +103,19 @@ p {
 
 .submit {
 	width: 15%;
-	background-color: #ddd;
+	background-color: rgba(255,255,255,0.6);
 	color: #222;
 	border: 0;
+	line-height: 1.8em;
+	font-size: 1.5em;
 	border-radius: 7px 7px 7px 7px;
-	line-height: 1.5em;
-	font-size: 1.9em;
 	padding: 0;
-	opacity: 0.9;
 	float: center;
 }
 
 textarea {
-    resize: none;
+  resize: none;
+	font-style: italic;
 }
 
 .submit:hover {
@@ -130,7 +129,6 @@ textarea {
 	}
 
 	p {
-		font-family: raleway;
 		font-size: 6vw;
 		text-align: center;
 	}

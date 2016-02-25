@@ -12,7 +12,16 @@
 	</head>
 
 	<body id="mainBackground">
-		<?php include '../menu.html'; ?>
+
+		<?php
+			if (!isset($_COOKIE["pguser"])) {
+				echo '<script type="text/javascript">
+           window.location = "/account/index.php"
+      	</script>';
+			}
+		?>
+
+		<?php include '../menu.php'; ?>
 
 		<div class="contentBox">
 			<p>
@@ -23,11 +32,10 @@
 		<div id="guide_form_wrapper" style="text-align:center;">
 			<div id="messageBox"><p id="message"></p></div>
 			<form id="guide_form">
-				<input type="text" name="title" placeholder="Title" class="input">
-				<input type="text" name="tel" placeholder="Phone number" class="input">
+				<input type="text" name="title" placeholder="Titre" class="input">
+				<input type="text" name="city" placeholder="Ville" class="input">
 				<textarea type="text" name="description" placeholder="Description" class="input" rows="4" cols="50"></textarea>
-				<input type="submit" name="submit" class="submit" value="Apply" onclick="return submitGuideInfos();" >
-				<!-- <input type="file" name="nom" /> -->
+				<input type="submit" name="submit" class="submit" value="Valider" onclick="return submitGuideInfos();" >
 			</form>
 		</div>
 

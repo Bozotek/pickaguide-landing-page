@@ -12,43 +12,33 @@
 	</head>
 
 	<body id="mainBackground">
-		<?php include '../menu.html'; ?>
 
-		<div style="margin:auto;">
-			<div class="contentBox" style="float:left;">
-				<p style="font-weight:bold;">
-					Log in
-				</p>
+		<?php include '../menu.php'; ?>
 
-				<div id="login_form_wrapper" style="text-align:center;">
-					<div id="messageBox"><p id="message"></p></div>
-					<form id="login_form">
-						<input type="text" name="pseudo" placeholder="Pseudo" class="input">
-						<input type="password" name="password" placeholder="Password" class="input">
-						<input type="submit" name="submit" class="submit" value="Apply" onclick="return submitLoginInfos();" >
-					</form>
-				</div>
-			</div>
-
-			<div class="contentBox" style="float:right;">
-				<p style="font-weight:bold;">
-					Sign in
-				</p>
-
-				<div id="login_form_wrapper" style="text-align:center;">
-					<div id="messageBox"><p id="message"></p></div>
-					<form id="login_form">
-						<input type="text" name="firstname" placeholder="Firstname" class="input">
-						<input type="text" name="lastname" placeholder="Lastname" class="input">
-						<input type="text" name="lastname" placeholder="Lastname" class="input">
-						<input type="submit" name="submit" class="submit" value="Apply" onclick="return submitLoginInfos();" >
-					</form>
-				</div>
-			</div>
-
-			</div>
+		<div class="login_form_wrapper">
+			<div class="form_title"><h1>Se connecter</h1></div>
+			<div class="messageBox"><p id="message_login" class="message"></p></div>
+			<form id="login_form">
+				<input type="email" name="email" placeholder="Email" class="input" required>
+				<input type="password" name="password" placeholder="Mot de passe" class="input" required="">
+				<input type="submit" name="submit" class="submit" value="Valider" onclick="return submitLoginInfos();">
+			</form>
 		</div>
 
+		<div class="login_form_wrapper">
+			<div class="form_title"><h1>Créer un compte</h1></div>
+			<div class="messageBox"><p id="message_signin" class="message"></p></div>
+			<form id="signin_form">
+				<input type="text" name="firstname" placeholder="Prénom" class="input" required>
+				<input type="text" name="lastname" placeholder="Nom" class="input" required>
+				<input type="email" name="email" placeholder="Email" class="input" required>
+				<input type="text" name="tel" placeholder="Portable" class="input half" required>
+				<input type="number" name="age" placeholder="Age" class="input half" min="1" max="99" required>
+				<input type="password" name="password" placeholder="Mot de passe" class="input half" required>
+				<input type="password" name="password_confirmation" placeholder="Confirmation" class="input half" required>
+				<input type="submit" name="submit" class="submit" value="Valider" onclick="return submitSigninInfos();" >
+			</form>
+		</div>
 
 	</body>
 

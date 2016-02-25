@@ -11,32 +11,34 @@
 			$db = $mongo->pickaguide;
 		}
 
-    $pseudo = $_POST["pseudo"];
+    $email = $_POST["email"];
 		$password = $_POST["password"];
     $collection = $db->logininfos;
 
     $response["status"] = false;
-    $response["message"] = "Wrong pseudo or password";
+    $response["message"] = "Mauvais mot de passe ou adresse email";
 
-    $result = $collection->findOne(array("pseudo" => $pseudo, "password" => $password));
+    $result = $collection->findOne(array("email" => $email, "password" => $password));
 
     if (count($result) != 0) {
       $response["status"] = true;
+      $cookie_name = "pguser";
+      $cookie_value = $result["_id"];
+      setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
       echo json_encode($response);
       exit();
     }
 
-    if ($pseudo == null) {
-      throw new ErrorException("Your pseudo seems empty, please enter valid caracters");
+    if ($email == null) {
+      throw new ErrorException("Ton adresse email semble vide");
     }
     if ($password == null) {
-      throw new ErrorException("Your password seems empty, please enter valid caracters");
+      throw new ErrorException("Ton mot de passe semble vide");
     }
 
 	} catch (Exception $e) {
 		$response["status"] = false;
 		$response["message"] = $e->getMessage();
-
   }
  	echo json_encode($response);
 	exit();

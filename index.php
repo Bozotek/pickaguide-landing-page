@@ -14,12 +14,12 @@
 	<body id="mainBackground">
 
 		<?php include_once("analyticstracking.php") ?>
-		<?php include 'menu.html'; ?>
+		<?php include 'menu.php'; ?>
 
     <div id="welcomebox">
-        <div class="welcomerow"><div class="welcometext">Welcome Travelers</div></div>
-        <div class="welcomerow"><div class="welcometext">to PickaGuide</div></div>
-        <div class="welcomerow"><div class="welcometext">and meet locals</div></div>
+        <div class="welcomerow"><div class="welcometext">Bienvenue</div></div>
+        <div class="welcomerow"><div class="welcometext">sur PickaGuide</div></div>
+        <div class="welcomerow"><div class="welcometext">pour rencontrer des locaux</div></div>
 				<div class="welcomebuttonrow">
 					<a href="/visit/index.php"><div class="welcomebutton buttontext">Visiter</div></a>
 					<a href="/forms/guide.php"><div class="welcomebutton buttontext" style="margin-right: 0;float: right;">Devenir guide</div></a>

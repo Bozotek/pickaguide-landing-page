@@ -13,11 +13,11 @@
 
 	<body id="mainBackground">
 
-		<?php include '../menu.html'; ?>
+		<?php include '../menu.php'; ?>
 
 		<div class="contentBox">
 			<p>
-				Choisis un Toulousain !
+				Choisissez un Toulousain !
 			</p>
 		</div>
 
@@ -49,7 +49,7 @@
 					echo "</div>";
 					echo "<div class='title'>";
 					echo "<div class='title_button_wrapper'><p class='title_button'>Inviter</p></div>";
-					echo "<a href='/index.php' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
+					echo "<a onclick='visitaguide(this.id);' href='#' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
 					echo "</div>";
 					echo "<div class='profile_body'>";
 					echo nl2br($guide["description"]);

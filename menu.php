@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="/style/menu.css">
 		<link rel="stylesheet" href="/style/fonts.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="/js/account.js"></script>
 
   </head>
 
@@ -30,10 +31,16 @@
 		</script>
 
     <div id="navbar" align="center">
-      <div class="navel"><a class="navlink" href="/index.php">Home</a></div>
-      <div class="navel"><a class="navlink" href="/about/index.php">About </a></div>
-      <div class="navel"><a class="navlink" href="/contact/index.php">Contact</a></div>
-			<div class="admel"><a class="admlink" href="/account/index.php">Account</a></div>
+      <div class="navel"><a class="navlink" href="/index.php">Accueil</a></div>
+      <div class="navel"><a class="navlink" href="/about/index.php">A propos</a></div>
+      <div class="navel"><a class="navlink" href="/contact/index.php">Nous contacter</a></div>
+			<?php
+				if (!isset($_COOKIE["pguser"])) {
+					echo "<div class='admel'><a class='admlink' href='/account/index.php'>Compte</a></div>";
+				} else {
+					echo "<div class='admel'><a class='admlink' onclick='logout();' href='#'>Déconnexion</a></div>";
+				}
+			?>
     </div>
 
 	</body>
