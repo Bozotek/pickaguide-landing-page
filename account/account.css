@@ -24,7 +24,7 @@ p {
 }
 
 .contentBox {
-	width: 80em;
+	width: 30em;
 	max-width: 100%;
 	background-color: #eee;
 	margin: 7em auto;
@@ -33,6 +33,7 @@ p {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-shadow: 0 5px 25px 0 #222;
+	display: inline-block;
 }
 
 #mainBackground {
