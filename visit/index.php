@@ -34,18 +34,20 @@
 					$db = $mongo->pickaguide;
 				}
 
-				$collection = $db->guideinfos;
-				$guides = $collection->find();
+				$guideinfos = $db->guideinfos;
+				$logininfos = $db->logininfos;
+				$guides = $guideinfos->find();
 
 				foreach($guides as $guide) {
+					$result = $logininfos->findOne(array("_id" => $guide["infos"]));
 					echo "<div class='result'>";
 					echo "<div class='profile_header'>";
 					echo "<div class='profile_header_block'>";
-					echo "<div class='image_wrapper'><img class='image' src='" . $guide["img"] . "' /></div>";
+					echo "<div class='image_wrapper'><img class='image' src='" . $result["img"] . "' /></div>";
 					echo "</div>";
 					echo "<div class='profile_header_block'>";
-					echo "<div class='infos_wrapper'><p class='infos'>Jackie</p></div>";
-					echo "<div class='infos_wrapper'><p class='infos'>21 ans</p></div>";
+					echo "<div class='infos_wrapper'><p class='infos'>" . $result["firstname"] . "</p></div>";
+					echo "<div class='infos_wrapper'><p class='infos'>" . $result["age"] . "</p></div>";
 					echo "</div>";
 					echo "</div>";
 					echo "<div class='title'>";

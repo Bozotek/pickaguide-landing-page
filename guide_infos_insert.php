@@ -1,4 +1,5 @@
 <?php
+  session_start();
   try {
 		$response = array('status' => true, 'message' => "");
 		$isInProd = getenv('PROD');
@@ -20,22 +21,24 @@
     $city = ltrim($city);
     $description = ltrim($description);
 
-    if ($title == null) {
+    $result = $collection->findOne(array("infos" => $_SESSION["userId"]));
+
+    if (count($result) != 0)
+      throw new Exception("Désolé, vous êtes déjà un guide, bientôt vous aurez la possibilité d'éditer votre profil");
+
+    if ($title == null)
       throw new Exception("Le titre semble vide");
-    }
 
-    if ($city == null) {
+    if ($city == null)
       throw new Exception("Vous n'avez pas indiqué de ville");
-    }
 
-    if ($description == null) {
+    if ($description == null)
       throw new Exception("La description semble vide");
-    }
 
     $document = array(
       "title" => $title,
       "city" => $city,
-      "img" => "",
+      "img" => "/src/images/profile_default.jpg",
       "infos" => $_SESSION["userId"],
       "description" => $description,
       "source" => "guides"
