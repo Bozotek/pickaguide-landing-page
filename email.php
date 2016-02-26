@@ -29,8 +29,8 @@
       <br/>Contactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !
       <br/><br/>En espérant que vous passerez du bon temps ensemble !<br/><br/>PickaGuide";
 
-    $from = array('no-reply@pickaguide.fr' => 'Service Pickaguide');
-    $to = array('alexander.saenen@epitech.eu' => 'Raloufah');
+    $from = array('no-reply@pickaguide.fr' => 'Service PickaGuide');
+    $to = array($to["email"] => $to["firstname"]);
     $subject = 'Un visiteur vous sollicite !';
 
     $username = 'app47628710@heroku.com';
