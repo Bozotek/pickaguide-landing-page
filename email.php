@@ -20,10 +20,10 @@
     $from = $collection->findOne(array("_id" => new MongoId($fromId)));
 
     $response["status"] = true;
-    $response["message"] = $to;
+    $response["message"] = var_dump($to);
     echo json_encode($response);
     exit();
-    
+
     /*if (count($to) == 0 || count($from) == 0)
       throw new Exception("Une erreur est survenue");
 
