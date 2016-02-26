@@ -19,9 +19,9 @@
     $to = $collection->findOne(array("_id" => $toId));
     $from = $collection->findOne(array("_id" => $fromId));
 
-    if (count($to) == 0 ||count($from) == 0) {
+    if (count($to) == 0 || count($from) == 0) {
       $response["status"] = false;
-      $response["message"] = "Une erreur est survenue";
+      $response["message"] = var_dump($toId);
       echo json_encode($response);
       exit();
     }
