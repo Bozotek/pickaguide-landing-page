@@ -1,4 +1,5 @@
 <?php
+  require "/lib/sendgrid-php/sendgrid-php.php";
   try {
     $response = array('status' => true, 'message' => "");
     $isInProd = getenv('PROD');
@@ -29,7 +30,6 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-    require 'vendor/autoload.php';
     $sendgrid = new SendGrid('pickdeveloper', 'lucasanstoast6');
 
     $message = new SendGrid\Email();
