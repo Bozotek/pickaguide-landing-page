@@ -38,7 +38,6 @@
     $document = array(
       "title" => $title,
       "city" => $city,
-      "img" => "/src/images/profile_default.jpg",
       "infos" => $_SESSION["userId"],
       "description" => $description,
       "source" => "guides"

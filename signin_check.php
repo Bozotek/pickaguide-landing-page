@@ -47,6 +47,7 @@
     $document = array(
       "firstname" => $firstname,
       "lastname" => $lastname,
+      "img" => "/src/images/profile_default.jpg",
       "tel" => $tel,
       "age" => $age,
       "email" => $email,
