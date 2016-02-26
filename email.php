@@ -30,7 +30,7 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-    $sendgrid = new SendGrid('app47628710@heroku.com', '6igak6xs4752');
+    $sendgrid = new SendGrid('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');
 
     $message = new SendGrid\Email();
     /*$message->addTo($to["email"])->
