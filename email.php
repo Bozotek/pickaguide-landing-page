@@ -35,7 +35,7 @@
     try {
         // Build your email and send it!
         Transmission::send(array('campaign'=>'first-mailing',
-            'from'=>'test@' . "sparkpostbox.com", // 'test@sparkpostbox.com'
+            'from'=>'test@sparkpostbox.com', // 'test@sparkpostbox.com'
             'subject'=>'Hello from php-sparkpost',
             'html'=>'<html><body><h1>Congratulations, {{name}}!</h1><p>You just sent your very first mailing!</p></body></html>',
             'text'=>'Congratulations, {{name}}!! You just sent your very first mailing!',
@@ -47,6 +47,8 @@
     } catch (Exception $err) {
         echo 'Whoops! Something went wrong';
         var_dump($err);
+        $response["status"] = false;
+        $response["message"] = $err->getMessage();
     }
   } catch (Exception $e) {
     $response["status"] = false;

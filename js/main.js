@@ -45,8 +45,9 @@ var visitaguide = function(guide, userId) {
 		data: query,
 		dataType: "json",
 		cache: false,
-		success: function() {
+		success: function(data) {
       //If the mail fails...
+      console.log(data);
       var element = document.getElementById('message');
       element.className = "visible";
       element.innerHTML = "Votre demande a été envoyé au guide, il vous contactera sous peu sur votre portable ou par email.";
