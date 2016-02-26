@@ -29,7 +29,7 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-    SparkPost::setConfig(["key" => '4feda1a12fb0d4ce0b2c4fd47ce5bef210bc0fcc']);
+SparkPost::setConfig(["key" => '4feda1a12fb0d4ce0b2c4fd47ce5bef210bc0fcc']);
 /*
     SparkPost::setConfig(["key"=>'4feda1a12fb0d4ce0b2c4fd47ce5bef210bc0fcc']);
 
