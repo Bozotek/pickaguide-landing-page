@@ -1,15 +1,10 @@
 <?php
-  //require "vendor/autoload.php";
-  //try {
-    $response["status"] = false;
-    $response["message"] = "Une erreur est survenue";
-    /*echo json_encode($response);
-    exit();
-
+  require "vendor/autoload.php";
+  try {
     $response = array('status' => true, 'message' => "");
     $isInProd = getenv('PROD');
 
-    if ($isInProd == true) {
+    /*if ($isInProd == true) {
       $mongo = new MongoClient(getenv('MONGOLAB_URI'));
       $db = $mongo->heroku_xcxrc7w2;
     } else {
@@ -61,10 +56,10 @@
         $response["status"] = false;
         $response["message"] = $err->getMessage();
     }*/
-  /*} catch (Exception $e) {
+  } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
-  }*/
+  }
   echo json_encode($response);
   exit();
 ?>
