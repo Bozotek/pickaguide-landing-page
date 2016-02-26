@@ -1,6 +1,11 @@
 <?php
-  require "vendor/autoload.php";
+  //require "vendor/autoload.php";
   try {
+    $response["status"] = false;
+    $response["message"] = "Une erreur est survenue";
+    echo json_encode($response);
+    exit();
+  
     $response = array('status' => true, 'message' => "");
     $isInProd = getenv('PROD');
 
@@ -27,7 +32,10 @@
     }
 
     if (count($from) == 0) {
-      
+      $response["status"] = false;
+      $response["message"] = "Une autre erreur est survenue";
+      echo json_encode($response);
+      exit();
     }
     /*$body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
