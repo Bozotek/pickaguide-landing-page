@@ -20,7 +20,7 @@
     $from = $collection->findOne(array("_id" => new MongoId($fromId)));
 
     $response["status"] = false;
-    $response["message"] = ($to == null);
+    $response["message"] = ($from == null);
     echo json_encode($response);
     exit();
 
