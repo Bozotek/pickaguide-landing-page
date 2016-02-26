@@ -19,8 +19,14 @@
     $to = $collection->findOne(array("_id" => new MongoId($toId)));
     $from = $collection->findOne(array("_id" => new MongoId($fromId)));
 
-    if ($to == null || $from == null)
-      throw new Exception("Une erreur est survenue");
+    $response["status"] = false;
+    $response["message"] = ($to == null);
+    echo json_encode($response);
+    exit();
+
+
+    //if ($to == null || $from == null)
+      //throw new Exception("Une erreur est survenue");
 
     /*$body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
