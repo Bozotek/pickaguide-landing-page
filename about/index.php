@@ -46,7 +46,7 @@
 								<i>Une rencontre avec un local<br/>
 								Une visite authentique<br/>
 								Visitez Toulouse pour ce que vous voulez<br/>
-								Visite en moins d’une heure<br/>
+								Visite en moins d'un quart d'heure<br/>
 								Des guides de qualité<br/></i>
             </p>
         </div>

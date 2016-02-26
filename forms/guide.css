@@ -123,7 +123,7 @@ textarea {
 
 @media screen and (max-width: 500px) {
 	#mainBackground {
-	  background-size: 100% auto;
+	  background-size: auto 100%;
 	}
 
 	p {
@@ -142,11 +142,13 @@ textarea {
 
 	.submit {
 		line-height: 1.5em;
+		width: 80%;
 		font-size: 6vw;
 	}
 
 	.contentBox {
-		margin: 3em auto;
+		margin-top: 7em;
+		margin-bottom: 1em;
 		padding: 1em;
 	}
 }

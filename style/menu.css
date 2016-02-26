@@ -82,3 +82,17 @@ a.navlink {
 a.navlink:hover {
 	color: #d62b2d !important;
 }
+
+
+/* Responsive design mode */
+
+
+@media screen and (max-width: 600px) {
+  .admel {
+    visibility: hidden;
+  }
+
+  .navlink {
+    font-size: 4vw !important;
+  }
+}
