@@ -1,5 +1,6 @@
 {
 	"require": {
-	         "ext-mongo": "*"
+	         "ext-mongo": "*",
+		"sparkpost/php-sparkpost": "^1.0"
       	}
 }

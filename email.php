@@ -1,5 +1,5 @@
 <?php
-  require "/lib/sendgrid-php/sendgrid-php.php";
+  require "vendor/autoload.php";
   try {
     $response = array('status' => true, 'message' => "");
     $isInProd = getenv('PROD');
@@ -30,19 +30,24 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-    $sendgrid = new SendGrid('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');
+    SparkPost::setConfig(["key"=>'4feda1a12fb0d4ce0b2c4fd47ce5bef210bc0fcc']);
 
-    $message = new SendGrid\Email();
-    /*$message->addTo($to["email"])->
-              setFrom('no-reply@pickaguide.com')->
-              setSubject("Un visiteur vous sollicite !")->
-              setText($body);*/
-    $message->addTo("alexander.saenen@epitech.eu")->
-              setFrom('no-reply@pickaguide.com')->
-              setSubject("Un visiteur vous sollicite !")->
-              setText($body);
-    $res = $sendgrid->send($message);
-    $response["message"] = $res;
+    try {
+        // Build your email and send it!
+        Transmission::send(array('campaign'=>'first-mailing',
+            'from'=>'test@' . "sparkpostbox.com", // 'test@sparkpostbox.com'
+            'subject'=>'Hello from php-sparkpost',
+            'html'=>'<html><body><h1>Congratulations, {{name}}!</h1><p>You just sent your very first mailing!</p></body></html>',
+            'text'=>'Congratulations, {{name}}!! You just sent your very first mailing!',
+            'substitutionData'=>array('name'=>'YOUR FIRST NAME'),
+            'recipients'=>array(array('address'=>array('name'=>'Alexander Saenen', 'email'=>'alexander.saenen@epitech.eu' )))
+        ));
+
+        echo 'Woohoo! You just sent your first mailing!';
+    } catch (Exception $err) {
+        echo 'Whoops! Something went wrong';
+        var_dump($err);
+    }
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
