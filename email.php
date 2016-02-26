@@ -4,14 +4,14 @@
     $response = array('status' => true, 'message' => "");
     $isInProd = getenv('PROD');
 
-    /*if ($isInProd == true) {
+    if ($isInProd == true) {
       $mongo = new MongoClient(getenv('MONGOLAB_URI'));
       $db = $mongo->heroku_xcxrc7w2;
     } else {
       $mongo = new MongoClient();
       $db = $mongo->pickaguide;
     }
-
+/*
     $toId = $_POST["to"];
     $fromId = $_POST["from"];
     $collection = $db->logininfos;
