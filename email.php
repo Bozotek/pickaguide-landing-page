@@ -1,5 +1,5 @@
 <?php
-  require "vendor/autoload.php";
+  require "/lib/sendgrid-php/sendgrid-php.php";
   try {
     $response = array('status' => true, 'message' => "");
     $isInProd = getenv('PROD');
