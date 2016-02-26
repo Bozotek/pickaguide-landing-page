@@ -17,7 +17,7 @@
 
 		<div class="contentBox">
 			<p>
-				Welcome on contact page !
+				
 			</p>
 		</div>
 

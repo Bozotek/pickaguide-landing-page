@@ -4,7 +4,7 @@
 
 	<head>
 
-		<title>About</title>
+		<title>A propos</title>
 		<meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="about.css" />
@@ -27,7 +27,7 @@
 
 
     <div class="element">
-        <p class="elementTitle">About</p>
+        <p class="elementTitle">A propos</p>
         <hr class="titleBreak">
         <img src="/src/images/ghost.png" id="aboutIcon" />
     </div>
@@ -38,7 +38,7 @@
                     text__left
                     overlay__left
                     overlay__rounded">
-            <p class="overlayTitle">Welcome</p>
+            <p class="overlayTitle">Bienvenue</p>
 
             <div class="overlayText">
                 <p>Hey guys ... and maybe ladies</p>
