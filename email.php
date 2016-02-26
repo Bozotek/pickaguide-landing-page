@@ -30,14 +30,19 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-    $sendgrid = new SendGrid('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');
+    $sendgrid = new SendGrid('app47628710@heroku.com', '6igak6xs4752');
 
     $message = new SendGrid\Email();
-    $message->addTo($to["email"])->
+    /*$message->addTo($to["email"])->
+              setFrom('no-reply@pickaguide.com')->
+              setSubject("Un visiteur vous sollicite !")->
+              setText($body);*/
+    $message->addTo("alexander.saenen@epitech.eu")->
               setFrom('no-reply@pickaguide.com')->
               setSubject("Un visiteur vous sollicite !")->
               setText($body);
-    $response = $sendgrid->send($message);
+    $res = $sendgrid->send($message);
+    $response["message"] = $res;
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
