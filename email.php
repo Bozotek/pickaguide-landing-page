@@ -1,11 +1,11 @@
 <?php
   //require "vendor/autoload.php";
-  try {
+  //try {
     $response["status"] = false;
     $response["message"] = "Une erreur est survenue";
-    echo json_encode($response);
+    /*echo json_encode($response);
     exit();
-  
+
     $response = array('status' => true, 'message' => "");
     $isInProd = getenv('PROD');
 
@@ -61,10 +61,10 @@
         $response["status"] = false;
         $response["message"] = $err->getMessage();
     }*/
-  } catch (Exception $e) {
+  /*} catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
-  }
+  }*/
   echo json_encode($response);
   exit();
 ?>
