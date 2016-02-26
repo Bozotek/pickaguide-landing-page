@@ -19,14 +19,17 @@
     $to = $collection->findOne(array("_id" => $toId));
     $from = $collection->findOne(array("_id" => $fromId));
 
-    if (count($to) == 0 || count($from) == 0) {
+    if (count($to) == 0)
       $response["status"] = false;
-      $response["message"] = var_dump($toId);
+      $response["message"] = "Une erreur est survenue";
       echo json_encode($response);
       exit();
     }
 
-    $body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
+    if (count($from) == 0) {
+      
+    }
+    /*$body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
@@ -49,7 +52,7 @@
         var_dump($err);
         $response["status"] = false;
         $response["message"] = $err->getMessage();
-    }
+    }*/
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
