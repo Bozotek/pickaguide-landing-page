@@ -19,8 +19,8 @@
     $to = $collection->findOne(array("_id" => new MongoId($toId)));
     $from = $collection->findOne(array("_id" => new MongoId($fromId)));
 
-    if ($to == null || $from == null)
-    throw new Exception("Une erreur est survenue");
+if ($to == null || $from == null)
+throw new Exception("Une erreur est survenue");
 
     //if ($to == null || $from == null)
       //throw new Exception("Une erreur est survenue");
