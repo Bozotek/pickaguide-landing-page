@@ -22,7 +22,7 @@
     <div class="imageSeparator
                 image__large">
         <img class="parent__width
-										fix__bottom" src="/src/images/paris_night.jpg" />
+										fix__center" src="/src/images/optimized_contact.jpg" />
     </div>
 
 
@@ -46,7 +46,7 @@
 								<i>Une rencontre avec un local<br/>
 								Une visite authentique<br/>
 								Visitez Toulouse pour ce que vous voulez<br/>
-								Visite en moins d'un quart d'heure<br/>
+								Guide disponible en moins d'un quart d'heure<br/>
 								Des guides de qualité<br/></i>
             </p>
         </div>
