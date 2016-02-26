@@ -25,9 +25,9 @@
     if ($from == null)
       throw new Exception("Une erreur est survenue");
 
-    $body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
-    $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
-    $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
+    $html = "Bonjour!\n\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
+    //$body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
+    //$body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
     $from = array('no-reply@pickaguide.fr' => 'Service de Pickaguide');
     $to = array('alexander.saenen@epitech.eu' => 'Raloufah');
@@ -44,11 +44,10 @@
     $message = new Swift_Message($subject);
 
     $message->setFrom($from);
-    $message->setBody($body, 'text/html');
+    $message->setBody($html, 'text/html');
     $message->setTo($to);
 
-    if (!$recipients = $swift->send($message, $failures))
-    {
+    if (!$recipients = $swift->send($message, $failures)) {
       $response["status"] = false;
       $response["message"] = $failures;
     }
