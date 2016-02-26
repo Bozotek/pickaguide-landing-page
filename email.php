@@ -29,7 +29,15 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-    mail($to["email"], "Un visiteur vous sollicite !", $body);
+    require 'vendor/autoload.php';
+    $sendgrid = new SendGrid('pickdeveloper', 'lucasanstoast6');
+
+    $message = new SendGrid\Email();
+    $message->addTo($to["email"])->
+              setFrom('no-reply@pickaguide.com')->
+              setSubject("Un visiteur vous sollicite !")->
+              setText($body);
+    $response = $sendgrid->send($message);
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();

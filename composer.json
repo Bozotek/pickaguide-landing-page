@@ -1,5 +1,6 @@
 {
 	"require": {
-	         "ext-mongo": "*"
+	         "ext-mongo": "*",
+	    "sendgrid/sendgrid": "2.0.5"
       	}
 }
