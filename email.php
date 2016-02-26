@@ -21,6 +21,8 @@
 
 if ($to == null)
 throw new Exception("Une erreur est survenue");
+if ($from == null)
+throw new Exception("Une erreur est survenue");
 
     //if ($to == null || $from == null)
       //throw new Exception("Une erreur est survenue");
