@@ -30,7 +30,7 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-    $sendgrid = new SendGrid('pickdeveloper', 'lucasanstoast6');
+    $sendgrid = new SendGrid('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');
 
     $message = new SendGrid\Email();
     $message->addTo($to["email"])->
