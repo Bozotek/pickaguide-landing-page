@@ -15,11 +15,11 @@
     $toId = $_POST["to"];
     $fromId = $_POST["from"];
     $collection = $db->logininfos;
-/*
+
     $to = $collection->findOne(array("_id" => $toId));
     $from = $collection->findOne(array("_id" => $fromId));
 
-    if (count($to) == 0)
+/*    if (count($to) == 0)
       $response["status"] = false;
       $response["message"] = "Une erreur est survenue";
       echo json_encode($response);
