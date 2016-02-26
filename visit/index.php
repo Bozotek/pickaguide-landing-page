@@ -53,7 +53,10 @@
 					echo "</div>";
 					echo "<div class='title'>";
 					echo "<div class='title_button_wrapper'><p class='title_button'>Inviter</p></div>";
-					echo "<a id='" . $result["_id"] . "' onclick='visitaguide(this.id, " . isset($_SESSION["userId"]) . ",\"" . $_SESSION["userId"] . "\");' href='#' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
+					if (isset($_SESSION["userId"]))
+						echo "<a id='" . $result["_id"] . "' onclick='visitaguide(this.id, \"" . $_SESSION["userId"] . "\");' href='#' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
+					else
+						echo "<a id='" . $result["_id"] . "' href='/account/index.php' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
 					echo "</div>";
 					echo "<div class='profile_body'>";
 					echo nl2br($guide["description"]);
