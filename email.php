@@ -29,28 +29,15 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-SparkPost::setConfig(["key" => '4feda1a12fb0d4ce0b2c4fd47ce5bef210bc0fcc']);
-/*
-    SparkPost::setConfig(["key"=>'4feda1a12fb0d4ce0b2c4fd47ce5bef210bc0fcc']);
+    $sendgrid = new SendGrid('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');
 
-    try {
-        // Build your email and send it!
-        Transmission::send(array('campaign'=>'first-mailing',
-            'from'=>'test@sparkpostbox.com', // 'test@sparkpostbox.com'
-            'subject'=>'Hello from php-sparkpost',
-            'html'=>'<html><body><h1>Congratulations, {{name}}!</h1><p>You just sent your very first mailing!</p></body></html>',
-            'text'=>'Congratulations, {{name}}!! You just sent your very first mailing!',
-            'substitutionData'=>array('name'=>'YOUR FIRST NAME'),
-            'recipients'=>array(array('address'=>array('name'=>'Alexander Saenen', 'email'=>'alexander.saenen@epitech.eu' )))
-        ));
-
-        echo 'Woohoo! You just sent your first mailing!';
-    } catch (Exception $err) {
-        echo 'Whoops! Something went wrong';
-        var_dump($err);
-        $response["status"] = false;
-        $response["message"] = $err->getMessage();
-    }*/
+    $message = new SendGrid\Email();
+    $message->addTo('alexander.saenen@epitech.eu')->
+              setFrom('me@bar.com')->
+              setSubject('Subject goes here')->
+              setText('Hello World!')->
+              setHtml('<strong>Hello World!</strong>');
+    $res = $sendgrid->send($message);
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
