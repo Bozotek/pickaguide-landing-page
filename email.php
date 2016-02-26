@@ -30,7 +30,7 @@
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
     SparkPost::setConfig(["key"=>'4feda1a12fb0d4ce0b2c4fd47ce5bef210bc0fcc']);
-
+/*
     try {
         // Build your email and send it!
         Transmission::send(array('campaign'=>'first-mailing',
@@ -48,7 +48,7 @@
         var_dump($err);
         $response["status"] = false;
         $response["message"] = $err->getMessage();
-    }
+    }*/
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
