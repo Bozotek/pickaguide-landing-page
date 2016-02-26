@@ -25,10 +25,7 @@
     if ($from == null)
       throw new Exception("Une erreur est survenue");
 
-    //if ($to == null || $from == null)
-      //throw new Exception("Une erreur est survenue");
-
-    /*$body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
+    $body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
@@ -51,7 +48,7 @@
         var_dump($err);
         $response["status"] = false;
         $response["message"] = $err->getMessage();
-    }*/
+    }
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
