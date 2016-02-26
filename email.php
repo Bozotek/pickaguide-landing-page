@@ -11,11 +11,11 @@
       $mongo = new MongoClient();
       $db = $mongo->pickaguide;
     }
-/*
+
     $toId = $_POST["to"];
     $fromId = $_POST["from"];
     $collection = $db->logininfos;
-
+/*
     $to = $collection->findOne(array("_id" => $toId));
     $from = $collection->findOne(array("_id" => $fromId));
 
