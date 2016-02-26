@@ -19,14 +19,14 @@
     $to = $collection->findOne(array("_id" => $toId));
     $from = $collection->findOne(array("_id" => $fromId));
 
-/*    if (count($to) == 0)
+    if (count($to) == 0)
       $response["status"] = false;
       $response["message"] = "Une erreur est survenue";
       echo json_encode($response);
       exit();
     }
 
-    if (count($from) == 0) {
+/*    if (count($from) == 0) {
       $response["status"] = false;
       $response["message"] = "Une autre erreur est survenue";
       echo json_encode($response);

@@ -38,8 +38,6 @@ var visitaguide = function(guide, userId) {
   element.className = "visible";
   element.innerHTML = "Votre demande est en cours de traitement";
 
-  console.log(guide);
-  console.log(userId);
   var query = {"to": guide, "from": userId};
   $.ajax({
 		type: "POST",
