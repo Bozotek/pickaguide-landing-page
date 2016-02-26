@@ -19,12 +19,7 @@
     $to = $collection->findOne(array("_id" => new MongoId($toId)));
     $from = $collection->findOne(array("_id" => new MongoId($fromId)));
 
-    $response["status"] = true;
-    $response["message"] = var_dump($to);
-    echo json_encode($response);
-    exit();
-
-    /*if (count($to) == 0 || count($from) == 0)
+    if ($to == null || $from == null)
       throw new Exception("Une erreur est survenue");
 
     /*$body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
