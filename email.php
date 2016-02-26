@@ -28,7 +28,7 @@
     $body = "Bonjour,\nNous avons le plaisir de vous informer qu'un visiteur s'intéresse à vous et souhaite passer du temps à découvrir la ville avec vous !";
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
-
+/*
     $text = "Hi!\nHow are you?\n";
    $html = "<html>
          <head></head>
@@ -77,7 +77,7 @@
    {
        echo "Something went wrong - ";
        print_r($failures);
-   }
+   }*/
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
