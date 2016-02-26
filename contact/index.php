@@ -13,11 +13,15 @@
 	</head>
 
 	<body id="mainBackground">
+
 		<?php include '../menu.php'; ?>
 
-		<div class="contentBox">
-			<p>
-				
+		<div class="infos_wrapper">
+			<p class="infos">
+				07 83 94 42 28
+			</p>
+			<p class="infos">
+				alexander.saenen@epitech.eu
 			</p>
 		</div>
 

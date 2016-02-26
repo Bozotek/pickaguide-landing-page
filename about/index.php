@@ -28,62 +28,41 @@
 
     <div class="element">
         <p class="elementTitle">A propos</p>
-        <hr class="titleBreak">
-        <img src="/src/images/ghost.png" id="aboutIcon" />
-    </div>
-
-    <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/notre_dame.jpg">
-
-        <div class="parallaxOverlay
-                    text__left
-                    overlay__left
-                    overlay__rounded">
-            <p class="overlayTitle">Bienvenue</p>
-
-            <div class="overlayText">
-                <p>Hey guys ... and maybe ladies</p>
-                <p>Scroll a bit further if you wish to learn more about this website</p>
-            </div>
-
-        </div>
 
     </div>
+
+    <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/optimized_clocher.jpg"></div>
 
     <div class="element">
-        <p class="elementTitle">What's this?</p>
+        <p class="elementTitle">Que faisons nous?</p>
         <hr class="contentBreak">
 
         <div class="content
                     text__center">
             <p>
-                You must be asking yourself why in the world you're here ...
-                <br/><br/>Well wonder no more !
-                <br/><br/>Normally, if you're here, that means you know my main Website
-                <a href="/index.php">GeekForLife</a>. If not,
-                feel free to check it out, you can click the link in the menu or the nice blue word in the previous sentence.
-                Come on ! Don't be shy !
-                <br/><br/>This is a kind of tool website that can help you upload new versions/updates of my projects.
-                <br/>More information about the tools are available on the <a href="#">Tools</a> page,
-                if you wish to contact me then click <a href="/contact/index.php">here</a>.
-                <br/><br/>
-                Oh and also, yes I know that the images I used for the parallax effect are not related to this website but
-                <br/>I thought it looked clean ;D
+								Pickaguide vise à mettre en relation un voyageur avec un toulousain pour une visite authentique de la ville rose.
+								<br/><br/>
+								<strong>Nos promesses :</strong><br/><br/>
+								<i>Une rencontre avec un local<br/>
+								Une visite authentique<br/>
+								Visitez Toulouse pour ce que vous voulez<br/>
+								Visite en moins d’une heure<br/>
+								Des guides de qualité<br/></i>
             </p>
         </div>
 
     </div>
 
-    <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/girl_river.jpg">
+    <div class="parallaxSeparator" bleed="10" data-parallax="scroll" data-image-src="/src/images/optimized_clocher_bottom.jpg">
 
         <div class="parallaxOverlay
                     text__left
                     overlay__right
                     overlay__rounded">
-            <p class="overlayTitle">Crazy right ?</p>
+            <p class="overlayTitle">Pourquoi ce projet ?</p>
 
             <div class="overlayText">
-                <p>What is so crazy about a geek who loves the sites and projects he makes ?</p>
-                <p>Literally everything ...</p>
+                <p>Pickaguide est un <a href="http://www.epitech.eu/epitech-innovative-projects.aspx" target="_blank">EPITECH Innovative Project</a> (EIP)</p>
             </div>
 
         </div>
@@ -91,9 +70,19 @@
     </div>
 
     <div class="element">
-        <p class="elementTitle">What's up ?</p>
-        <p class="text__center">So what do you think ? Please check everything there is to see !</p>
-				<br/>
+        <p class="elementTitle">Notre équipe</p>
+				<div align="center">
+	        <img src="https://cdn.local.epitech.eu/userprofil/profilview/saenen_a.jpg" style="margin: 3.6%" />
+					<img src="https://cdn.local.epitech.eu/userprofil/profilview/bonald_j.jpg" style="margin: 3.6%" />
+					<img src="https://cdn.local.epitech.eu/userprofil/profilview/sangoi_l.jpg" style="margin: 3.6%" />
+					<img src="https://cdn.local.epitech.eu/userprofil/profilview/pradel_v.jpg" style="margin: 3.6%" />
+					<img src="https://cdn.local.epitech.eu/userprofil/profilview/peauge_t.jpg" style="margin: 3.6%" />
+					<img src="https://cdn.local.epitech.eu/userprofil/profilview/gousse_p.jpg" style="margin: 3.6%" />
+				</div>
+				<p class="text__center" style="font-size: 1.7em;line-height: 1.5em;"><strong>6</strong> globe trotteurs<br/>
+					plus de <strong>101 884 KM</strong> parcourus !<br/>
+					plus de <strong>21</strong> pays visités !<br/>
+					et des souvenirs pleins la tête ...<br/><br/></p>
     </div>
 
     <?php include '../footer.html' ?>

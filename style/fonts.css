@@ -1,4 +1,27 @@
 @font-face {
+	font-family: stellar;
+	src: url('../fonts/stellarFont/Stellar-Regular.otf');
+}
+
+@font-face {
+	font-family: stellar;
+	src: url('../fonts/stellarFont/Stellar-Bold.otf');
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: stellar;
+	src: url('../fonts/stellarFont/Stellar-Medium.otf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: stellar;
+	src: url('../fonts/stellarFont/Stellar-Light.otf');
+	font-weight: lighter;
+}
+
+@font-face {
 	font-family: raleway;
 	src: url('../fonts/ralewayFont/raleway_thin-webfont.woff');
 }
