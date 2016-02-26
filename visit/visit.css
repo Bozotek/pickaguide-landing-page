@@ -63,6 +63,29 @@ p {
 	max-width: 100%;
 }
 
+.messageBox {
+	width: inherit;
+	max-width: 95%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 19em;
+}
+
+#message {
+	padding: 0.8em 2em;
+	font-weight: bold;
+	font-style: italic;
+	background-color: rgba(221,221,221,0.7);
+	visibility: hidden;
+	color: #222;
+}
+
+.visible {
+	visibility: visible !important;
+}
+
 .result {
 	background-color: #ddd;
 	width: 18em;

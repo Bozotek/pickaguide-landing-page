@@ -23,6 +23,7 @@
 		</div>
 
 		<div class="results" align="center">
+			<div class="messageBox"><p id="message"></p></div>
 			<?php
 				$isInProd = getenv('PROD');
 
@@ -52,7 +53,7 @@
 					echo "</div>";
 					echo "<div class='title'>";
 					echo "<div class='title_button_wrapper'><p class='title_button'>Inviter</p></div>";
-					echo "<a onclick='visitaguide(this.id);' href='#' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
+					echo "<a id='" . $result["_id"] . "' onclick='visitaguide(this.id, " . isset($_SESSION["userId"]) . ",\"" . $_SESSION["userId"] . "\");' href='#' style='text-decoration: none;'><div class='title_text'>" . $guide["title"] . "</div></a>";
 					echo "</div>";
 					echo "<div class='profile_body'>";
 					echo nl2br($guide["description"]);

@@ -33,9 +33,26 @@ function getCookie(cname) {
     return "";
 }
 
-var visitaguide = function(hasSession) {
+var visitaguide = function(guide, hasSession, userId) {
   if (hasSession) {
+    var element = document.getElementById('message');
+    element.className = "visible";
+    element.innerHTML = "Votre demande est en cours de traitement";
 
+    var query = {"to": guide, "from": userId};
+    $.ajax({
+  		type: "POST",
+  		url: "../email.php",
+  		data: query,
+  		dataType: "json",
+  		cache: false,
+  		success: function() {
+        //If the mail fails...
+        var element = document.getElementById('message');
+        element.className = "visible";
+        element.innerHTML = "Votre demande a été envoyé au guide, il vous contactera sous peu sur votre portable ou par email.";
+  		}
+   	});
   }
   else {
     document.location.href = "/account/index.php";
