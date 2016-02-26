@@ -31,13 +31,13 @@
 
     $sendgrid = new SendGrid('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');
 
-    $message = new SendGrid\Email();
+    /*$message = new SendGrid\Email();
     $message->addTo('alexander.saenen@epitech.eu')->
               setFrom('me@bar.com')->
               setSubject('Subject goes here')->
               setText('Hello World!')->
               setHtml('<strong>Hello World!</strong>');
-    $res = $sendgrid->send($message);
+    $res = $sendgrid->send($message);*/
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
