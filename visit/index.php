@@ -45,7 +45,7 @@
 					echo "<div class='profile_header_block'>";
 					echo "<div class='image_wrapper'><img class='image' src='" . $result["img"] . "' /></div>";
 					echo "</div>";
-					echo "<div class='profile_header_block'>";
+					echo "<div class='profile_header_block' style='padding-left: 0;'>";
 					echo "<div class='infos_wrapper'><p class='infos'>" . $result["firstname"] . "</p></div>";
 					echo "<div class='infos_wrapper'><p class='infos'>" . $result["age"] . "</p></div>";
 					echo "</div>";

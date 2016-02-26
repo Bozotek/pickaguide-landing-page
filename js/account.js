@@ -53,7 +53,7 @@ var submitSigninInfos = function() {
 		success: function(data) {
 			switch(data.status) {
 				case true:
-					activateSuccess('message_signin', "Votre compte a été créée !");
+					activateSuccess('message_signin', "Votre compte a été créé !");
 					break;
 				default:
 					activateFailure('message_signin', data.message);

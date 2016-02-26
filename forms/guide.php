@@ -26,7 +26,7 @@
 
 		<div class="contentBox">
 			<p>
-				Welcome on the guide form ! </br>Please fill some informations and you will be part of our community !
+				Bienvenue sur le formulaire d'inscription des Guides !</br>Remplissez quelques informations et vous ferez partie de notre merveilleuse communauté !
 			</p>
 		</div>
 
