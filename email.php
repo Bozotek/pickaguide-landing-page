@@ -1,5 +1,5 @@
 <?php
-  require "/lib/sendgrid-php/sendgrid-php.php";
+  include_once "vendor/autoload.php";
   try {
     $response = array('status' => true, 'message' => "");
     $isInProd = getenv('PROD');
@@ -29,15 +29,55 @@
     $body += "\nContactez le rapidement par mail sur " . $from["email"] . " ou sur son portable " . $from["tel"] . " !";
     $body += "En espérant que vous passerez du bon temps ensemble !\nPickaGuide";
 
-    $sendgrid = new SendGrid('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');
+    $text = "Hi!\nHow are you?\n";
+   $html = "<html>
+         <head></head>
+         <body>
+             <p>Hi!<br>
+                 How are you?<br>
+             </p>
+         </body>
+         </html>";
+   // This is your From email address
+   $from = array('someone@example.com' => 'Name To Appear');
+   // Email recipients
+   $to = array(
+         'alexander.saenen@epitech.eu'=>'Raloufah'
+   );
+   // Email subject
+   $subject = 'Example PHP Email';
 
-    /*$message = new SendGrid\Email();
-    $message->addTo('alexander.saenen@epitech.eu')->
-              setFrom('me@bar.com')->
-              setSubject('Subject goes here')->
-              setText('Hello World!')->
-              setHtml('<strong>Hello World!</strong>');
-    $res = $sendgrid->send($message);*/
+   // Login credentials
+   $username = 'app47628710@heroku.com';
+   $password = 'vgfryzxx3287';
+
+   // Setup Swift mailer parameters
+   $transport = Swift_SmtpTransport::newInstance('smtp.sendgrid.net', 587);
+   $transport->setUsername($username);
+   $transport->setPassword($password);
+   $swift = Swift_Mailer::newInstance($transport);
+
+   // Create a message (subject)
+   $message = new Swift_Message($subject);
+
+   // attach the body of the email
+   $message->setFrom($from);
+   $message->setBody($html, 'text/html');
+   $message->setTo($to);
+   $message->addPart($text, 'text/plain');
+
+   // send message
+   if ($recipients = $swift->send($message, $failures))
+   {
+       // This will let us know how many users received this message
+       echo 'Message sent out to '.$recipients.' users';
+   }
+   // something went wrong =(
+   else
+   {
+       echo "Something went wrong - ";
+       print_r($failures);
+   }
   } catch (Exception $e) {
     $response["status"] = false;
     $response["message"] = $e->getMessage();
