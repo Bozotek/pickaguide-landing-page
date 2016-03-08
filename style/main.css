@@ -7,10 +7,10 @@ html, body {
 }
 
 #mainBackground {
-  background-image: url(/src/images/optimized_skyscrapers.jpg);
+  background-image: url(/src/images/optimized_homepage.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center top;
+  background-position: center center;
   background-size: 100%;
 	background-color: #222;
 }
