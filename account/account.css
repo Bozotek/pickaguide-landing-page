@@ -1,0 +1,172 @@
+
+
+/* General body reset and background configuration */
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+
+}
+
+p {
+  font-family: junction;
+  font-size: 1.1em;
+  color: #222;
+	text-align: center;
+}
+
+#mainBackground {
+  background-image: url(/src/images/background_contact.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: 100%;
+	background-color: #222;
+}
+
+
+/* Remove the square dotted line when a link was clicked */
+
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+
+/* Related to the Content */
+
+
+.login_form {
+	overflow: auto;
+}
+
+.login_form_wrapper {
+	text-align: center;
+	padding: 2%;
+	width: 50%;
+	float: left;
+	margin-top: 10em;
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.green {
+	background-color: rgba(46,204,113,0.5);
+}
+
+.red {
+	background-color: rgba(231,76,60,0.5);
+}
+
+.messageBox {
+	max-width: 95%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.message {
+	padding: 0.5em 2em;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+}
+
+.input {
+	width: 85%;
+	border: 0;
+	border-radius: 7px 7px 7px 7px;
+	line-height: 1.5em;
+	font-size: 1.4em;
+	padding: 0 1em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: rgba(34,34,34,0.6);
+	color: #ddd;
+	display: block;
+	margin: 1em auto;
+}
+
+.half {
+	display: inline-block;
+	width: 40%;
+	margin: 2%;
+}
+
+.submit {
+	background-color: rgba(255,255,255,0.6);
+	color: #222;
+	border: 0;
+	border-radius: 7px 7px 7px 7px;
+	line-height: 1.8em;
+	font-size: 1.5em;
+	padding: 0 2em;
+}
+
+.submit:hover {
+	color: #d62b2d;
+	cursor: pointer;
+}
+
+.form_title {
+	font-family: raleway;
+	color: #222;
+	margin: 2em;
+}
+
+@media screen and (max-width: 725px) {
+	#mainBackground {
+	  background-size: auto 100%;
+	}
+
+	p {
+		font-size: 5vw;
+		text-align: center;
+	}
+
+	.login_form_wrapper {
+		width: 95%;
+	}
+
+	.input {
+		line-height: 1.3em;
+		font-size: 5vw;
+	}
+
+	.submit {
+		line-height: 1.5em;
+		font-size: 6vw;
+	}
+
+	.contentBox {
+		margin: 3em auto;
+		padding: 1em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.submit {
+		width: 80%;
+		margin-top: 1em;
+		line-height: 1.2em;
+		font-size: 4vw;
+		margin-bottom: 2em;
+	}
+
+	.half {
+		line-height: 1.3em;
+		font-size: 4vw;
+		margin-bottom: 1em;
+	}
+}
