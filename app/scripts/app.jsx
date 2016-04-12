@@ -3,44 +3,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 let WelcomeText = React.createClass({
-    render() {
-        return(
-            <div className="welcometext">{this.props.content}</div>
-        );
-    }
+  render() {
+    return(
+      <div className="welcometext">{this.props.content}</div>
+    );
+  }
 });
 
 let WelcomeRow = React.createClass({
-    render() {
-        return(
-            <div className="welcomerow">
-                <WelcomeText content={this.props.textContent}/>
-            </div>
-        );
-    }
+  render() {
+    return(
+      <div className="welcomerow">
+        <WelcomeText content={this.props.textContent}/>
+      </div>
+    );
+  }
 });
 
 let WelcomeBox = React.createClass({
-    render() {
-        var mainBackground = {
-          backgroundImage: 'url("./images/optimized_homepage.jpg")',
-        	backgroundRepeat: 'no-repeat',
-        	backgroundAttachment: 'fixed',
-        	backgroundPosition: 'center center',
-        	backgroundSize: '100%',
-        	backgroundColor: '#222'
-        };
-
-        return(
-            <div style={mainBackground}>
-                <div className="welcomebox">
-                    <WelcomeRow textContent="Bienvenue" />
-                    <WelcomeRow textContent="sur PickaGuide" />
-                    <WelcomeRow textContent="pour rencontrer des locaux" />
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return(
+      <div className="welcomebox">
+        <WelcomeRow textContent="Bienvenue" />
+        <WelcomeRow textContent="sur PickaGuide" />
+        <WelcomeRow textContent="pour rencontrer des locaux" />
+      </div>
+    );
+  }
 });
 
 // <div class="welcomebuttonrow">
