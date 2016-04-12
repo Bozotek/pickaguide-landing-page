@@ -1,0 +1,34 @@
+{
+  "name": "pickaguide-landing-page",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "PickaGuide's first landing page",
+  "main": "server.js",
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.14.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --content-base public/ --progress --colors",
+    "start": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p --config webpack.prod.config.js --profile --progress --colors"
+  },
+  "author": "PickaGuideTeam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.35",
+    "babel-loader": "^5.4.0",
+    "css-loader": "^0.23.1",
+    "jsx-loader": "^0.13.2",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
