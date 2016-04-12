@@ -23,7 +23,7 @@ let WelcomeRow = React.createClass({
 let WelcomeBox = React.createClass({
     render() {
         var mainBackground = {
-            backgroundImage: 'url("./images/optimized_homepage.jpg")',
+          backgroundImage: 'url("./images/optimized_homepage.jpg")',
         	backgroundRepeat: 'no-repeat',
         	backgroundAttachment: 'fixed',
         	backgroundPosition: 'center center',
