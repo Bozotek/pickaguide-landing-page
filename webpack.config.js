@@ -15,5 +15,8 @@ module.exports = {
       { test: /\.jsx$/, loaders: ['jsx-loader', "babel-loader"] }
     ]
   },
-  plugins: []
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 };
