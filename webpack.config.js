@@ -1,10 +1,10 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: ['./app/scripts/app.jsx'],
+  entry: ['./app/app.js'],
   output: {
-    path: './public',
-    filename: 'app.js'
+    path: __dirname,
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
@@ -14,6 +14,9 @@ module.exports = {
       { test: /\.js$/, loaders: ["react-hot", "babel-loader"], exclude: '/node_modules/' },
       { test: /\.jsx$/, loaders: ['jsx-loader', "babel-loader"] }
     ]
+  },
+  query: {
+    presets: ['es2015', 'react']
   },
   plugins: [
     new webpack.NoErrorsPlugin()

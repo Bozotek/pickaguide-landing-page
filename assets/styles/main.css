@@ -8,7 +8,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url(/images/optimized_homepage.jpg);
+	background-image: url(/assets/images/optimized_homepage.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
