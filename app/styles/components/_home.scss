@@ -1,48 +1,33 @@
+@import 'fonts';
+
 /* General body reset and background configuration */
 
 
-html {
-	height: 100%;
-}
-
 body {
-	margin: 0;
-	padding: 0;
 	background-image: url(/assets/images/optimized_homepage.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: 100%;
 	background-color: #222;
-	height: inherit;
-}
-
-
-/* Remove the square dotted line when a link was clicked */
-
-
-:focus {
-	outline: none;
-}
-
-::-moz-focus-inner {
-	border: 0;
 }
 
 
 /* Related to the welcome message */
 
 
-.welcomebox {
+.welcomeBox {
 	position: fixed;
 	width: 43em;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	font-family: pangram;
+	text-align: center;
 }
 
-.welcomerow {
+.row {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -50,10 +35,10 @@ body {
 	opacity: 0.82;
 	width: auto;
 	margin: 0.6em;
-	padding: 0.8em;
+	padding: 0.1em 0.3em 0.6em 0.3em;
 }
 
-.welcomebuttonrow {
+.welcomeButtonRow {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -63,8 +48,8 @@ body {
 	padding: 0;
 }
 
-.welcomebutton {
-	width: 13.68em;
+.button {
+	width: calc(50% - 0.25em);
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -74,23 +59,25 @@ body {
 	padding: 0.8em;
 }
 
-.welcomebutton:hover {
+.button:hover {
 	background-color: #d62b2d;
+	-webkit-box-shadow: 0px 5px 20px black;
+    -moz-box-shadow: 0px 5px 20px black;
+    box-shadow: 0px 5px 20px black;
 }
 
-.buttontext {
+.button > p {
 	color: #ddd;
-	font-family: junction;
 	font-style: italic;
-	text-align: center;
 	font-size: 1.5em;
+	margin: 0.5em;
 }
 
-.welcometext {
+.row > p {
+	margin: 0.2em;
 	color: #333;
-	font-family: junction;
-	text-align: center;
 	font-size: 3em;
+	font-weight: normal;
 }
 
 
@@ -102,7 +89,7 @@ body {
 		background-size: auto 100% !important;
 	}
 
-	.welcomebox {
+	.welcomeBox {
 		background-color: #ddd;
 		width: 100% !important;
 		left: 0 !important;
@@ -112,22 +99,22 @@ body {
 		padding: 0.6em 0 0.6em 0 !important;
 	}
 
-	.welcomerow {
+	.row {
 		width: auto;
 		padding: 0;
 		margin: 0.2em;
 	}
 
-	.welcomebutton {
+	.button {
 		width: 50%;
 		margin-right: 0;
 	}
 
-	.buttontext {
+	.button > p {
 		font-size: 4vw;
 	}
 
-	.welcometext {
+	.row > p {
 		font-size: 6vw;
 	}
 } /* For vertical screen orientation */
@@ -137,7 +124,7 @@ body {
 		background-size: 100% auto;
 	}
 
-	.welcomebox {
+	.welcomeBox {
 		background-color: #ddd;
 		opacity: 0.82;
 		position: absolute;
@@ -145,25 +132,26 @@ body {
 		top: 50%;
 		-webkit-transform: translate(-50%, -30%);
 		transform: translate(-50%, -30%);
-		padding: 0.6em 5em 0.6em 5em;
+		padding: 0.6em 1em 0.6em 1em;
 	}
 
-	.welcomerow {
-		width: auto;
+	.row {
 		padding: 0;
 		margin: 0.2em;
 	}
 
-	.welcomebutton {
+	.button {
+		height: 2em;
 		width: 50%;
+		padding: 0;
 		margin-right: 0;
 	}
 
-	.buttontext {
-		font-size: 4vh;
+	.button > p {
+		font-size: 3vh;
 	}
 
-	.welcometext {
-		font-size: 6vh;
+	.row > p {
+		font-size: 4vh;
 	}
 } /* For horizontal screen orientation */

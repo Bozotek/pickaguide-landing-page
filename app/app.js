@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import Router from 'react-router';
 // import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
-//
+
+import './styles/main.scss';
+
 // import LoginHandler from './components/Login.jsx';
-import {WelcomeBox} from './components/WelcomeBox.jsx'
+import {HomePage} from './components/HomePage.jsx'
 
 ReactDOM.render(
-    <WelcomeBox />,
+    <HomePage />,
     document.getElementById('root')
 );
 //

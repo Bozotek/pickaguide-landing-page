@@ -1,0 +1,49 @@
+/* General body reset and background configuration */
+
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: inherit;
+}
+
+
+/* Remove the square dotted line when a link was clicked */
+
+
+:focus {
+	outline: none;
+}
+
+::-moz-focus-inner {
+	border: 0;
+}
+
+::selection {
+	background-color: #d62b2d;
+	color: #fff;
+}
+
+::-moz-selection {
+	background-color: #d62b2d;
+	color: #fff;
+}
+
+::-o-selection {
+	background-color: #d62b2d;
+	color: #fff;
+}
+
+::-ms-selection {
+	background-color: #d62b2d;
+	color: #fff;
+}
+
+::-webkit-selection {
+	background-color: #d62b2d;
+	color: #fff;
+}

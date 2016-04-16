@@ -1,0 +1,67 @@
+/* Fonts */
+
+
+@font-face {
+	font-family: bariol;
+	src: url('/assets/fonts/bariolRegular.woff');
+}
+
+@font-face {
+	font-family: bariol;
+	src: url('/assets/fonts/bariolRegularItalic.woff');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: charlevoix;
+	src: url('/assets/fonts/CharlevoixPro-Light.otf');
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: charlevoix;
+	src: url('/assets/fonts/CharlevoixPro-Medium.otf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: charlevoix;
+	src: url('/assets/fonts/CharlevoixPro-Regular.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: charlevoix;
+	src: url('/assets/fonts/CharlevoixPro-Semibold.otf');
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: charlevoix;
+	src: url('/assets/fonts/CharlevoixPro-Thin.otf');
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: pangram;
+	src: url('/assets/fonts/Pangram-ExtraLight.otf');
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: pangram;
+	src: url('/assets/fonts/Pangram-Light.otf');
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: pangram;
+	src: url('/assets/fonts/Pangram-Regular.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: pangram;
+	src: url('/assets/fonts/Pangram-Medium.otf');
+	font-weight: bold;
+}
